@@ -1,0 +1,59 @@
+{% extends "Dashboard/base.html" %}
+{% load static %}
+
+{% block content %}
+ <!--second one-->
+ <div class="container ">
+  <div class="col">
+    <div class="col-md-6 offset-md-3">
+      <div class="card">
+        <div class="card-body">
+          <div class="text-center">
+            <h3 class="card-title text-center mt-3">{{ company_product.title }}</h3>
+          </div>
+         <div>
+          
+          <table class="table">
+            <tbody>
+              <tr>
+                <th>Product Name</th>
+                <td><b>{{ company_product.title }}</b></td>
+              </tr>
+              <tr>
+                <th>Product Price</th>
+                <td><b>{{ company_product.price}}</b></td>
+              </tr>
+              <tr>
+                <th>Product Category</th>
+                <td><small>{{ company_product.category }}</small></td>
+              </tr>
+              <tr>
+                <th>discount_price</th>
+                <td><b>{{ company_product.discount_price }}</b></td>
+              </tr>
+              <tr>
+                <th>Status</th>
+                <td>Active</td>
+              </tr>
+              <tr>
+                <th>label</th>
+                <td>{{ company_product.label }}</td>
+              </tr>
+              <tr>
+                <th>slug</th>
+                <td>{{ company_product.slug }}</td>
+              </tr>
+              <tr>
+                <th>description</th>
+                <td>{{ company_product.description }}</td>
+              </tr>
+            </tbody>
+          </table>
+         </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}

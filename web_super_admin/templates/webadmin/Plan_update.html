@@ -1,0 +1,17 @@
+{% extends "Dashboard/base.html" %}
+{% load bootstrap5 %}
+
+{% block content %}
+<div class="mb-3">
+  <h4>{{ Product.title }} update</h4>
+
+  <form method="POST" action="" enctype="multipart/form-data">
+    {% csrf_token %}
+    {% bootstrap_form form %}
+    <button type="submit" value="submit">Submit</button>
+</form>
+  
+</div>
+<!-- Left side columns -->
+
+{% endblock content %}

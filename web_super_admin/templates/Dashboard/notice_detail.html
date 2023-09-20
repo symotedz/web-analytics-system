@@ -1,0 +1,59 @@
+{% extends "Dashboard/base.html" %}
+{% load static %}
+
+{% block content %}
+ <!--second one-->
+ <div class="container ">
+  <div class="col">
+    <div class="col-md-6 offset-md-3">
+      <div class="card">
+        <div class="card-body">
+          <div class="text-center">
+            <h3 class="card-title text-center mt-3">{{company_payment_gateway.name }}</h3>
+          </div>
+         <div>
+          
+          <table class="table">
+            <tbody>
+              <tr>
+                <th>Payment Gateway Name</th>
+                <td><b>{{company_payment_gateway.name }}</b></td>
+              </tr>
+              <tr>
+                <th>api client</th>
+                <td><b>{{company_payment_gateway.api_client}}</b></td>
+              </tr>
+              <tr>
+                <th>logo </th>
+                <td><small>{{company_payment_gateway.logo }}</small></td>
+              </tr>
+              <tr>
+                <th>Date of implementation</th>
+                <td><b>{{company_payment_gateway.date }}</b></td>
+              </tr>
+              <tr>
+                <th>Status</th>
+                <td>Active</td>
+              </tr>
+              <tr>
+                <th>api key</th>
+                <td>{{ company_payment_gateway.api_key }}</td>
+              </tr>
+              <tr>
+                <th>slug</th>
+                <td></td>
+              </tr>
+              <tr>
+                <th>description</th>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+         </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}

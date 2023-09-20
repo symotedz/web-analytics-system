@@ -1,0 +1,11 @@
+{% extends "Dashboard/base.html" %}
+{% load bootstrap5 %}
+
+{% block content %}
+<h4>Updating {{ Payment_gateway.name }} payment gateway credentials</h4>
+  <form method="POST">
+    {% csrf_token %}
+    {% bootstrap_form form %}
+    <button class="btn btn-primary">Update</button>
+  </form>
+{% endblock content %}
