@@ -30,8 +30,8 @@
               <tbody>
     {% for plan in plans %}
     <tr>
-        <td>{{ plan.title }}</td>
-        <td scope="row">{{ plan.price }}</td>
+        <td>{{ plan.name }}</td>
+        <td scope="row">{{ plan.payment_method }}</td>
         <td scope="row">{{ plan.date }}</td>
         <td>
               <a href="{% url 'Plan_detail' plan.pk %}" class="view" title="View" data-toggle="tooltip"><i class="material-icons">&#xE417;</i>View</a>

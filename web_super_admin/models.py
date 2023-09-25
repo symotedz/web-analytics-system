@@ -21,7 +21,7 @@ class Teacher(models.Model):
         return self.first_name
 
 class Staff(models.Model):
-    profile_picture = models.CharField(max_length=100, null=True, blank=True)
+    profile_picture = models.ImageField(upload_to="upload/", default="a.png", null=True, blank=True)
     first_name = models.CharField(max_length=200)
     middle_name = models.CharField(max_length=200)
     last_name = models.CharField(max_length=200)
@@ -42,6 +42,7 @@ class class_block(models.Model):
     school_block = models.ForeignKey(School_blocks, on_delete=models.CASCADE)
     class_teacher = models.ForeignKey(Teacher, on_delete = models.CASCADE)
     start_date = models.DateField(auto_now=True)
+
     
 class Student(models.Model):
     admission_number = models.IntegerField(primary_key=True)
@@ -53,15 +54,17 @@ class Student(models.Model):
     date_of_birth = models.DateTimeField(max_length=200)
     prevoius_school = models.CharField(max_length=200)
     prevoius_grade = models.CharField(max_length=200)
-    profile_picture = models.CharField(max_length=200)
+    profile_picture = models.ImageField(upload_to="upload/", default="a.png")
     guardian_first_name = models.CharField(max_length=200)
     guardian_middle_name = models.CharField(max_length=200)
     guardian_last_name = models.CharField(max_length=200)
     guardian_phone_number = models.CharField(max_length=200)
-    guardian_profile_picture = models.CharField(max_length=200)
+    guardian_profile_picture = models.ImageField(upload_to="upload/", default='a.png')
     guardian_alternative_mobile_number = models.CharField(max_length=200)
     guardian_relationship = models.CharField(max_length=200)
     password = models.CharField(max_length=200)
+    confirm_password = models.CharField(max_length=200, null=True, blank=True)
+    status = models.BooleanField(null=True, blank=True, default=True)
     
     
     
@@ -121,6 +124,9 @@ class Subject(models.Model):
     name = models.CharField(max_length=255)
     code = models.CharField(max_length=20)
     description = models.TextField()
+    
+    def __str__(self):
+        return self.name
     
 class Exam(models.Model):
     name = models.ForeignKey(Subject, on_delete=models.CASCADE, blank=True, null=True)

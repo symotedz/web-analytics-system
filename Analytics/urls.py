@@ -17,10 +17,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from . import views
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     path('', views.index),
     path('admin/', admin.site.urls),
+    path('api-auth/', include('rest_framework.urls')),
     path('api/', include('api.urls')),
     path('api_accountant/', include('api_accountant.urls')),
     path('api_admin/', include('api_admin.urls')),
@@ -29,7 +32,7 @@ urlpatterns = [
     path('api_student/', include('api_student.urls')),
     path('api_super_admin/', include('api_super_admin.urls')),
     path('api_teacher/', include('api_teacher.urls')),
-    path('parent/', include('parent.urls')),
+    # path('parent/', include('parent.urls')),
     path('accountant/', include('web_accountant.urls')),
     path('web_admin/', include('web_admin.urls')),
     path('app/', include('web_app.urls')),
@@ -39,3 +42,6 @@ urlpatterns = [
     path('super_admin/', include('web_super_admin.urls')),
     path('teacher/', include('web_teacher.urls')),
 ]
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)

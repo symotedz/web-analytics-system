@@ -9,44 +9,44 @@
       <div class="card">
         <div class="card-body">
           <div class="text-center">
-            <img src="{% static 'img/profile-img.jpg'   %}" class="img-fluid rounded-circle" alt="Profile Image" style="width: 150px; height: 150px;">
+            <img src= "{{ student.profile_picture.url }}" class="img-fluid rounded-circle" alt="Profile Image" style="width: 150px; height: 150px;">
           </div>
          <div>
           
-          <h3 class="card-title text-center mt-3">{{ teacher.first_name }} {{ teacher.last_name }}</h3>
+          <h3 class="card-title text-center mt-3">{{ student.first_name }} {{ student.last_name }}</h3>
           <table class="table">
             <tbody>
               <tr>
                 <th>First Name</th>
-                <td><b>{{ teacher.first_name }}</b></td>
+                <td><b>{{ student.first_name }}</b></td>
               </tr>
               <tr>
                 <th>Middle Name</th>
-                <td><b>{{ teacher.middle_name }}</b></td>
+                <td><b>{{ student.middle_name }}</b></td>
               </tr>
               <tr>
                 <th>Last Name</th>
-                <td><small>{{ teacher.last_name }}</small></td>
+                <td><small>{{ student.last_name }}</small></td>
               </tr>
               <tr>
                 <th>username</th>
-                <td><b>{{ teacher.username }}</b></td>
+                <td><b>{{ student.admission_number }}</b></td>
               </tr>
               <tr>
                 <th>Status</th>
-                <td>Active</td>
+                <td>{{ student.status }}</td>
               </tr>
               <tr>
                 <th>contact</th>
-                <td>{{ teacher.contact }}</td>
+                <td>{{ student.contact }}</td>
               </tr>
               <tr>
-                <th>Email</th>
-                <td>{{ teacher.Email }}</td>
+                <th>Block</th>
+                <td>{{ student.school_block }}</td>
               </tr>
               <tr>
-                <th>Email</th>
-                <td>{{ teacher.registration_date }}</td>
+                <th>Class</th>
+                <td>{{ student.class_name }}</td>
               </tr>
             </tbody>
           </table>

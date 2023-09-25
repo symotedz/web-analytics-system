@@ -1,4 +1,4 @@
-{% extends "Dashboard/base.html" %}
+{% extends "librarian/base.html" %}
 {% load static %}
 
 {% block content %}
@@ -77,33 +77,7 @@
             <!--end-->
 
 <!--start-->
-<div class="col-md-6 col-lg-4">
-  <div class="card text-bg-success">
-    <div class="card-body">
-      <h5 class="card-title"><b>Opportunities</b></h5>
-      <p class="card-text"><em></em> {{ total_opportunities }}</p>
-    </div>
-  </div>
-</div>
-<div class="col-md-6 col-lg-4">
-  <div class="card text-bg-success">
-    <div class="card-body">
-      <h5 class="card-title"><b>School Fees</b></h5>
-      <p class="card-text">{{0}}</p>
-    </div>
-  </div>
-</div>
-<!-- Add more cards for other layers -->
 
-<div class="col-md-4 mt-2">
-  <div class="card text-bg-info">
-    <div class="card-body">
-      <h5 class="card-title"><b>Notices</b></h5>
-      <!-- Add a graph chart for income today -->
-      <p class="card-text"><em></em> {{ total_notices }}</p>
-    </div>
-  </div>
-</div>
 <!--end-->
 
           </div>

@@ -230,24 +230,7 @@
 <!------------------------------------------------------------------------------->
       <!--   EMPLOYEES   -->
 <!-------------------------------------------------------------------------------->
-      <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
-          <i class="bi bi-menu-button-wide"></i><span>Block</span><i class="bi bi-chevron-down ms-auto"></i>
-        </a>
-        <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-  
-          <li>
-            <a href="{%  url 'School_blockss_detail' %}">
-              <i class="bi bi-circle"></i><span>School Blocks</span>
-            </a>
-          </li>
-          <li>
-            <a href="{% url 'class_blocks_detail' %}">
-               <i class="bi bi-circle"></i><span>Class Blocks</span>
-             </a>
-           </li> 
-        </ul>
-      </li>
+
       <!-- End Components Nav -->
 
 <!----------------------------------------------------------------------------------->
@@ -259,16 +242,7 @@
         </a>
         <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           
-          <li>
-            <a href="{% url 'teachers_detail' %}">
-              <i class="bi bi-circle"></i><span>Teacher</span>
-            </a>
-          </li>
-          <li>
-            <a href="{% url 'staffs_detail' %}">
-              <i class="bi bi-circle"></i><span>Staff</span>
-            </a>
-          </li>
+
           <li>
             <a href="{% url 'students_detail' %}">
               <i class="bi bi-circle"></i><span>Student</span>
@@ -278,18 +252,6 @@
           <li>
             <a href="{% url 'subjects_detail' %}">
               <i class="bi bi-circle"></i><span>Subjects</span>
-            </a>
-          </li>
-
-          <li>
-            <a href="{% url 'fees_detail' %}">
-              <i class="bi bi-circle"></i><span>School Fees</span>
-            </a>
-          </li>
-
-          <li>
-            <a href="{% url 'librarys_detail' %}">
-              <i class="bi bi-circle"></i><span>Library</span>
             </a>
           </li>
 
@@ -308,18 +270,6 @@
           <li>
             <a href="{% url 'assignments_detail' %}">
               <i class="bi bi-circle"></i><span>Assignment</span>
-            </a>
-          </li>
-
-
-          <li>
-            <a href="{% url 'grades_detail' %}">
-              <i class="bi bi-circle"></i><span>Grade</span>
-            </a>
-          </li>
-          <li>
-            <a href="{% url 'TransportationRequests_detail' %}">
-              <i class="bi bi-circle"></i><span>Transport</span>
             </a>
           </li>
 
