@@ -70,3 +70,29 @@ class NoticeListCreateView(generics.ListCreateAPIView):
 class ExamListCreateView(generics.ListCreateAPIView):
     queryset = Exam.objects.all()
     serializer_class = ExamSerializer
+    
+class ExamResultListCreateView(generics.ListCreateAPIView):
+    queryset = ExamResult.objects.all()
+    serializer_class = ExamResultSerializer
+    
+class AttendanceListCreateView(generics.ListCreateAPIView):
+    queryset = Attendance.objects.all()
+    serializer_class = AttendanceSerializer
+    
+class AssignmentListCreateView(generics.ListCreateAPIView):
+    queryset = Assignment.objects.all()
+    serializer_class = AssignmentSerializer 
+    
+class GradeListCreateView(generics.ListCreateAPIView):
+    queryset = Grade.objects.all()
+    serializer_class = GradeSerializer
+    
+class TransportationRouteListCreateView(generics.ListCreateAPIView):
+    queryset = TransportationRoute.objects.all()
+    serializer_class = TransportationRouteSerializer 
+    
+class TransportationStopListCreateView(generics.ListCreateAPIView):
+    queryset = TransportationStop.objects.all()
+    serializer_class = TransportationStopSerializer 
+    
+    
