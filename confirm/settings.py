@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-yrjwb7frc*pf9c)u!+qx644l8l#ff%)flronuj(9($t&d)$4ib
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['stylushpayroll.pythonanywhere.com']
+ALLOWED_HOSTS = ['*']
 
 
 
