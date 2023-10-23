@@ -7,6 +7,11 @@ class AnanlyticsAuthenticationMiddleware:
         self.get_response = get_response
         
     def __call__(self, request) -> Any:
+        user = authenticate(request)
+        
+        if user is not  None:
+            request.user = user
+        
         response = self.get_response(request)
         
         return response
