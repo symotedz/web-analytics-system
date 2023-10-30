@@ -90,6 +90,31 @@ class NoticeSerializer(serializers.ModelSerializer):
         model = Notice 
         fields = '___all__'
         
+class AttendanceSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Attendance
+        fields = '__all__'
+        
+class AssignmentSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Assignment
+        fields = '__all__'
+        
+class GradeSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Grade 
+        fields = '__all__'
+        
+class TransportationRouteSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = TransportationRoute
+        fields = '__all__'
+        
+class TransportationStopSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = TransportationStop
+        fields = '__all__'
+        
         
         
 
