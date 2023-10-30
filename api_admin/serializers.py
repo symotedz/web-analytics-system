@@ -70,8 +70,25 @@ class NoticeSerializer(serializers.ModelSerializer):
         model = LibraryReservation
         fields = '__all__'
         
+class SubjectSerializer(serializers.ModelSerializer):
+    class Meta:
+        models = Subject 
+        fields = '__all__' 
         
+class ExamSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Exam
+        fields = '__all__'
         
+class ExamResultSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = ExamResult
+        fields = '__all__'
+        
+class NoticeSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Notice 
+        fields = '___all__'
         
         
         
