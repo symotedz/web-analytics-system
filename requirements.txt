@@ -2,4 +2,7 @@ django-bootstrap-v5===1.0.11
 markdown 
 django-filter
 django-bootstrap-v5===1.0.11
- Pillow
+Pillow
+
+#this pc is currently in use!!! please move to the next one?
+
