@@ -64,5 +64,8 @@ def notices_delete(request):
     notices.delete()
     return redirect('/super_admin/notices_detail/')
 
+
+#developed with love by kamau waweru @simokamaa github
+
         
     
