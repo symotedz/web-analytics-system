@@ -1,6 +1,8 @@
 from django.urls import path      
 from . import views, books_render_views, books_views
 
+app_name = 'web_librarian'
+
 urlpatterns = [
     path('', views.index),
     

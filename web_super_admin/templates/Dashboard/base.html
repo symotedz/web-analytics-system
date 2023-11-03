@@ -40,7 +40,7 @@
   <header id="header" class="header fixed-top d-flex align-items-center">
 
     <div class="d-flex align-items-center justify-content-between">
-      <a href="{% url 'index' %}" class="logo d-flex align-items-center">
+      <a href="{% url 'web_super_admin:index' %}" class="logo d-flex align-items-center">
         <img src="{% static 'img/logo.png'  %}" alt="">
         <span class="d-none d-lg-block">Analytics System</span>
       </a>
@@ -218,7 +218,7 @@
     <ul class="sidebar-nav" id="sidebar-nav">
 
       <li class="nav-item">
-        <a class="nav-link " href="{% url 'index' %}">
+        <a class="nav-link " href="{% url 'web_super_admin:index' %}">
           <i class="bi bi-grid"></i>
           <span>Dashboard</span>
         </a>
@@ -237,12 +237,12 @@
         <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
   
           <li>
-            <a href="{%  url 'School_blockss_detail' %}">
+            <a href="{%  url 'web_super_admin:School_blockss_detail' %}">
               <i class="bi bi-circle"></i><span>School Blocks</span>
             </a>
           </li>
           <li>
-            <a href="{% url 'class_blocks_detail' %}">
+            <a href="{% url 'web_super_admin:class_blocks_detail' %}">
                <i class="bi bi-circle"></i><span>Class Blocks</span>
              </a>
            </li> 
@@ -260,59 +260,59 @@
         <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           
           <li>
-            <a href="{% url 'teachers_detail' %}">
+            <a href="{% url 'web_super_admin:teachers_detail' %}">
               <i class="bi bi-circle"></i><span>Teacher</span>
             </a>
           </li>
           <li>
-            <a href="{% url 'staffs_detail' %}">
+            <a href="{% url 'web_super_admin:staffs_detail' %}">
               <i class="bi bi-circle"></i><span>Staff</span>
             </a>
           </li>
           <li>
-            <a href="{% url 'students_detail' %}">
+            <a href="{% url 'web_super_admin:students_detail' %}">
               <i class="bi bi-circle"></i><span>Student</span>
             </a>
           </li>
 
           <li>
-            <a href="{% url 'subjects_detail' %}">
+            <a href="{% url 'web_super_admin:subjects_detail' %}">
               <i class="bi bi-circle"></i><span>Subjects</span>
             </a>
           </li>
 
           <li>
-            <a href="{% url 'fees_detail' %}">
+            <a href="{% url 'web_super_admin:fees_detail' %}">
               <i class="bi bi-circle"></i><span>School Fees</span>
             </a>
           </li>
 
           <li>
-            <a href="{% url 'librarys_detail' %}">
+            <a href="{% url 'web_super_admin:librarys_detail' %}">
               <i class="bi bi-circle"></i><span>Library</span>
             </a>
           </li>
 
           <li>
-            <a href="{% url 'exams_detail' %}">
+            <a href="{% url 'web_super_admin:exams_detail' %}">
               <i class="bi bi-circle"></i><span>Exam</span>
             </a>
           </li>
 
           <li>
-            <a href="{% url 'ExamResults_detail' %}">
+            <a href="{% url 'web_super_admin:ExamResults_detail' %}">
               <i class="bi bi-circle"></i><span>Exam Result</span>
             </a>
           </li>
 
           <li>
-            <a href="{% url 'assignments_detail' %}">
+            <a href="{% url 'web_super_admin:assignments_detail' %}">
               <i class="bi bi-circle"></i><span>Assignment</span>
             </a>
           </li>
 
           <li>
-            <a href="{% url 'TransportationRequests_detail' %}">
+            <a href="{% url 'web_super_admin:TransportationRequests_detail' %}">
               <i class="bi bi-circle"></i><span>Transport</span>
             </a>
           </li>
@@ -331,18 +331,18 @@
         </a>
         <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <a href="{% url 'notices_detail' %}">
+            <a href="{% url 'web_super_admin:notices_detail' %}">
               <i class="bi bi-circle"></i><span>Notice</span>
             </a>
           </li>
 
           <li>
-            <a href="{% url 'Events_detail' %}">
+            <a href="{% url 'web_super_admin:Events_detail' %}">
               <i class="bi bi-circle"></i><span>Event</span>
             </a>
           </li>
           <li>
-            <a href="{% url 'Plans_detail' %}">
+            <a href="{% url 'web_super_admin:Plans_detail' %}">
               <i class="bi bi-circle"></i><span>Plan</span>
             </a>
           </li>
@@ -359,19 +359,19 @@
         </a>
         <ul id="charts-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <a href="{% url 'TimeTables_detail' %}">
+            <a href="{% url 'web_super_admin:TimeTables_detail' %}">
               <i class="bi bi-circle"></i><span>Time Table</span>
             </a>
           </li>
 
       <li>
-        <a href="{% url 'ELearnings_detail' %}">
+        <a href="{% url 'web_super_admin:ELearnings_detail' %}">
           <i class="bi bi-circle"></i><span>E-Learning</span>
         </a>
       </li>
 
       <li>
-        <a href="{% url 'Messages_detail' %}">
+        <a href="{% url 'web_super_admin:Messages_detail' %}">
           <i class="bi bi-circle"></i><span>Message</span>
         </a>
       </li>
@@ -387,7 +387,7 @@
 <!------------------------------------------------------------------------------------------->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="{% url 'Messages_detail' %}">
+        <a class="nav-link collapsed" href="{% url 'web_super_admin:Messages_detail' %}">
           <i class="bi bi-gem"></i><span>Opportunities</span>
         </a>
 
@@ -417,7 +417,7 @@
     <h1>Dashboard</h1>
     <nav>
       <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="{% url 'index' %}">Home</a></li>
+        <li class="breadcrumb-item"><a href="{% url 'web_super_admin:index' %}">Home</a></li>
         <li class="breadcrumb-item active">Dashboard</li>
       </ol>
     </nav>

@@ -2,6 +2,8 @@ from django.urls import path
 from . import views
 from . views import *
 
+app_name = 'api_super_admin'
+
 urlpatterns = [
     path('', views.index, name = 'web_super_admin_index'),
     path('plan/', PlanListCreateView.as_view(), name='PlanListCreateView'),

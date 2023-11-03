@@ -2,6 +2,8 @@ from django.urls import path
 from . import views
 from . views import *
 
+app_name = 'api_admin'
+
 urlpatterns = [
     path('', views.index),
     path('plan/', PlanListCreateView.as_view(), name="PlanListCreateView"),
