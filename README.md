@@ -18,6 +18,7 @@ Symotedz analytics system
 
 <h6>The instructions are provided by @simokamaa -github && @kamauwaweru11 -twitter account && @simonkamau -linkedin account
 
+
  licensed under GPL-3.0 https://www.gnu.org/licenses/gpl-3.0.en.html
 
 
