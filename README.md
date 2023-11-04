@@ -6,11 +6,11 @@ Symotedz analytics system
 # instructions
 1) Fork the Repository
 
-2) Create A new Branch
+2) Create A new Branch <git checkout -b feature>
 
 3) Make Your Changes
 
-4) Push your branch to github
+4) Push your new changes to the branch in github
 
 5) Create a pull request
 
