@@ -3,12 +3,13 @@ from . import views , teacher_views, staff_views, student_views, subject_views, 
 from . import library_views, exam_views, assignment_views, grade_views, TransportationRequest_views
 from . import TransportationStopOrder_views, TransportationStop_views, TransportationRoute_views
 from . import Notice_views, Event_views, Plan_views, School_blocks_views, class_block_views
-from . import ELearning_views, Message_views, TimeTable_views, ExamResult_views
+from . import ELearning_views, Message_views, TimeTable_views, ExamResult_views, exam_result_pdf_view
 
 app_name = 'web_super_admin'
 
 urlpatterns = [
     path('', views.index, name='index'),
+    path('exam_result_pdf/', exam_result_pdf_view.exam_result_pdf.as_view(), name="exam_result_pdf"),
     
     # urls for teacher view
     path('teacher_create/', teacher_views.teacher_create, name='teacher_create'),

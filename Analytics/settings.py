@@ -62,6 +62,7 @@ INSTALLED_APPS = [
     'web_teacher',
     'bootstrap5',
     'rest_framework',
+    'easy_pdf',
 ]
 
 MIDDLEWARE = [
