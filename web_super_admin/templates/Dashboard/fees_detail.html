@@ -14,12 +14,12 @@
             <!--Delete all button-->
             <div class="col m-1">
 
-                <button type="submit" class="btn btn-danger"><a style="color:white;" href="{% url 'fees_delete' %}">Delete all</a></button>
+                <button type="submit" class="btn btn-danger"><a style="color:white;" href="{% url 'web_super_admin:fees_delete' %}">Delete all</a></button>
 
             </div>
             <!--Add new Product-->
             <div class="col m-1">
-               <a href="{% url 'fee_create' %}"> <button type="submit" class="btn btn-primary">Add fee</button></a>
+               <a href="{% url 'web_super_admin:fee_create' %}"> <button type="submit" class="btn btn-primary">Add fee</button></a>
             </div>
           </div>
           <table class="table table-striped table-hover table-bordered">
@@ -38,9 +38,9 @@
                   <td scope="row">{{ fee.amount }}</td>
                   <td scope="col">{{ fee.payment_date }}</td>
                   <td>
-                    <a href="{% url 'fee_detail' fee.pk %}" class="view" title="View" data-toggle="tooltip"><i class="material-icons">&#xE417;</i>View</a>
-                    <a href="{% url 'fee_update' fee.pk %}" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i>Edit</a>
-                    <a href="{% url 'fee_delete' fee.pk %}" class="delete" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE517;</i>Delete</a>
+                    <a href="{% url 'web_super_admin:fee_detail' fee.pk %}" class="view" title="View" data-toggle="tooltip"><i class="material-icons">&#xE417;</i>View</a>
+                    <a href="{% url 'web_super_admin:fee_update' fee.pk %}" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i>Edit</a>
+                    <a href="{% url 'web_super_admin:fee_delete' fee.pk %}" class="delete" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE517;</i>Delete</a>
              </td>
                   <style>
                     .lin{

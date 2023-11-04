@@ -14,12 +14,12 @@
             <!--Delete all button-->
             <div class="col m-1">
 
-                <button type="submit" class="btn btn-danger"><a style="color:white;" href="{% url 'ExamResults_delete' %}">Delete all</a></button>
+                <button type="submit" class="btn btn-danger"><a style="color:white;" href="{% url 'web_super_admin:ExamResults_delete' %}">Delete all</a></button>
 
             </div>
             <!--Add new Product-->
             <div class="col m-1">
-               <a href="{% url 'ExamResult_create' %}"> <button type="submit" class="btn btn-primary">Add exam</button></a>
+               <a href="{% url 'web_super_admin:ExamResult_create' %}"> <button type="submit" class="btn btn-primary">Add exam</button></a>
             </div>
           </div>
           <table class="table table-striped table-hover table-bordered">
@@ -36,9 +36,9 @@
                   <th>{{ Examresult.exam}}</th>
                   <td scope="row">{{ Examresult.student }}</td>
                   <td>
-                    <a href="{% url 'ExamResult_detail' Examresult.pk %}" class="view" title="View" data-toggle="tooltip"><i class="material-icons">&#xE417;</i>View</a>
-                    <a href="{% url 'ExamResult_update' Examresult.pk %}" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i>Edit</a>
-                    <a href="{% url 'ExamResult_delete' Examresult.pk %}" class="delete" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE517;</i>Delete</a>
+                    <a href="{% url 'web_super_admin:ExamResult_detail' Examresult.pk %}" class="view" title="View" data-toggle="tooltip"><i class="material-icons">&#xE417;</i>View</a>
+                    <a href="{% url 'web_super_admin:ExamResult_update' Examresult.pk %}" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i>Edit</a>
+                    <a href="{% url 'web_super_admin:ExamResult_delete' Examresult.pk %}" class="delete" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE517;</i>Delete</a>
              </td>
                   <style>
                     .lin{

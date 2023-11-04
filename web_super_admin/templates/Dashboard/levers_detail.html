@@ -7,10 +7,10 @@
 
   <div class="row">
     <div class="col m-1">
-    <button class="btn btn-danger"><a href="{% url 'orders_delete'  %}" class="delete" style="color:white;">Delete All</a></button>
+    <button class="btn btn-danger"><a href="{% url 'web_super_admin:orders_delete'  %}" class="delete" style="color:white;">Delete All</a></button>
     </div>
     <div class="col">
-       <a href="{% url 'order_create' %}"><button class="btn btn-primary">Add New</button></a> 
+       <a href="{% url 'web_super_admin:order_create' %}"><button class="btn btn-primary">Add New</button></a> 
     </div>
   </div>
 
@@ -37,9 +37,9 @@
           <td>{{ company_order.start_date }}</td>
           <td>
         
-              <a href="{% url 'order_detail' company_order.pk %}" class="view" title="View" data-toggle="tooltip"><i class="material-icons">&#xE417;</i>View</a>
-              <a href="{% url 'order_update' company_order.pk %}" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i>Edit</a>
-              <a href="{% url 'order_delete' company_order.pk %}" class="delete" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE517;</i>Delete</a>
+              <a href="{% url 'web_super_admin:order_detail' company_order.pk %}" class="view" title="View" data-toggle="tooltip"><i class="material-icons">&#xE417;</i>View</a>
+              <a href="{% url 'web_super_admin:order_update' company_order.pk %}" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i>Edit</a>
+              <a href="{% url 'web_super_admin:order_delete' company_order.pk %}" class="delete" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE517;</i>Delete</a>
        
 
           </td>

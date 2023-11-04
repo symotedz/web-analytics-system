@@ -14,12 +14,12 @@
             <!--Delete all button-->
             <div class="col m-1">
 
-                <button type="submit" class="btn btn-danger"><a style="color:white;" href="{% url 'notices_delete' %}">Delete all</a></button>
+                <button type="submit" class="btn btn-danger"><a style="color:white;" href="{% url 'web_super_admin:notices_delete' %}">Delete all</a></button>
 
             </div>
             <!--Add new Product-->
             <div class="col m-1">
-               <a href="{% url 'notice_create' %}"> <button type="submit" class="btn btn-primary">Add a notice</button></a>
+               <a href="{% url 'web_super_admin:notice_create' %}"> <button type="submit" class="btn btn-primary">Add a notice</button></a>
             </div>
           </div>
           <table class="table table-striped table-hover table-bordered">
@@ -40,9 +40,9 @@
                   <td scope="col">{{ notice.date_posted }}</td>
                   <td scope="col">{{ notice.author }}</td>
                   <td>
-                    <a href="{% url 'notice_detail' notice.pk %}" class="view" title="View" data-toggle="tooltip"><i class="material-icons">&#xE417;</i>View</a>
-                    <a href="{% url 'notice_update' notice.pk %}" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i>Edit</a>
-                    <a href="{% url 'notice_delete' notice.pk %}" class="delete" title="delete" data-toggle="tooltip"><i class="material-icons">&#xE517;</i>Delete</a>
+                    <a href="{% url 'web_super_admin:notice_detail' notice.pk %}" class="view" title="View" data-toggle="tooltip"><i class="material-icons">&#xE417;</i>View</a>
+                    <a href="{% url 'web_super_admin:notice_update' notice.pk %}" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i>Edit</a>
+                    <a href="{% url 'web_super_admin:notice_delete' notice.pk %}" class="delete" title="delete" data-toggle="tooltip"><i class="material-icons">&#xE517;</i>Delete</a>
              </td>
 
                 </tr>

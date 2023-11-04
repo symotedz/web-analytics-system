@@ -12,7 +12,7 @@
     </form>
   </div>
   <div class="col m-1">
-    <a href="{% url 'package_create' %}"><button class="btn btn-primary">Add new</button></a>
+    <a href="{% url 'web_super_admin:package_create' %}"><button class="btn btn-primary">Add new</button></a>
   </div>
 </div>
  </div>
@@ -37,9 +37,9 @@
   <td>{{company_package.duration}}</td>
   <td>{{company_package.description}}</td>
   <td>
-    <a href="{% url 'package_detail' company_package.pk %}" class="view" title="View" data-toggle="tooltip"><i class="material-icons">&#xE417;</i>View</a>
-    <a href="{% url 'package_update' company_package.pk %}" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i>Edit</a>
-    <a href="{% url 'package_delete' company_package.pk %}" class="delete" title="delete" data-toggle="tooltip"><i class="material-icons">&#xE517;</i>Delete</a>
+    <a href="{% url 'web_super_admin:package_detail' company_package.pk %}" class="view" title="View" data-toggle="tooltip"><i class="material-icons">&#xE417;</i>View</a>
+    <a href="{% url 'web_super_admin:package_update' company_package.pk %}" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i>Edit</a>
+    <a href="{% url 'web_super_admin:package_delete' company_package.pk %}" class="delete" title="delete" data-toggle="tooltip"><i class="material-icons">&#xE517;</i>Delete</a>
 </td>
 </tr>
 {% endfor %}

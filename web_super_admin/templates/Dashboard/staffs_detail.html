@@ -14,12 +14,12 @@
             <!--Delete all button-->
             <div class="col m-1">
 
-                <button type="submit" class="btn btn-danger"><a style="color:white;" href="{% url 'staffs_delete' %}">Delete all</a></button>
+                <button type="submit" class="btn btn-danger"><a style="color:white;" href="{% url 'web_super_admin:staffs_delete' %}">Delete all</a></button>
 
             </div>
             <!--Add new Product-->
             <div class="col m-1">
-               <a href="{% url 'staff_create' %}"> <button type="submit" class="btn btn-primary">Add staff</button></a>
+               <a href="{% url 'web_super_admin:staff_create' %}"> <button type="submit" class="btn btn-primary">Add staff</button></a>
             </div>
           </div>
           <table class="table table-striped table-hover table-bordered">
@@ -38,9 +38,9 @@
                   <td scope="row">{{ staff.middle_name }}</td>
                   <td scope="col">{{ staff.last_name }}</td>
                   <td>
-                    <a href="{% url 'staff_detail' staff.pk %}" class="view" title="View" data-toggle="tooltip"><i class="material-icons">&#xE417;</i>View</a>
-                    <a href="{% url 'staff_update' staff.pk %}" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i>Edit</a>
-                    <a href="{% url 'staff_delete' staff.pk %}" class="delete" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE517;</i>Delete</a>
+                    <a href="{% url 'web_super_admin:staff_detail' staff.pk %}" class="view" title="View" data-toggle="tooltip"><i class="material-icons">&#xE417;</i>View</a>
+                    <a href="{% url 'web_super_admin:staff_update' staff.pk %}" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i>Edit</a>
+                    <a href="{% url 'web_super_admin:staff_delete' staff.pk %}" class="delete" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE517;</i>Delete</a>
              </td>
                   <style>
                     .lin{

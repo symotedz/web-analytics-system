@@ -14,12 +14,12 @@
             <!--Delete all button-->
             <div class="col m-1">
 
-                <button type="submit" class="btn btn-danger"><a style="color:white;" href="{% url 'Messages_delete' %}">Delete all</a></button>
+                <button type="submit" class="btn btn-danger"><a style="color:white;" href="{% url 'web_super_admin:Messages_delete' %}">Delete all</a></button>
 
             </div>
             <!--Add new Product-->
             <div class="col m-1">
-               <a href="{% url 'Message_create' %}"> <button type="submit" class="btn btn-primary">Add Message</button></a>
+               <a href="{% url 'web_super_admin:Message_create' %}"> <button type="submit" class="btn btn-primary">Add Message</button></a>
             </div>
           </div>
           <table class="table table-striped table-hover table-bordered">
@@ -42,9 +42,9 @@
                   <td scope="col">{{ Message.date_posted }}</td>
                   <td scope="col">{{ Message.posted_by }}</td>
                   <td>
-                    <a href="{% url 'Message_detail' Message.pk %}" class="view" title="View" data-toggle="tooltip"><i class="material-icons">&#xE417;</i>View</a>
-                    <a href="{% url 'Message_update' Message.pk %}" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i>Edit</a>
-                    <a href="{% url 'Message_delete' Message.pk %}" class="delete" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE517;</i>Delete</a>
+                    <a href="{% url 'web_super_admin:Message_detail' Message.pk %}" class="view" title="View" data-toggle="tooltip"><i class="material-icons">&#xE417;</i>View</a>
+                    <a href="{% url 'web_super_admin:Message_update' Message.pk %}" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i>Edit</a>
+                    <a href="{% url 'web_super_admin:Message_delete' Message.pk %}" class="delete" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE517;</i>Delete</a>
              </td>
                   <style>
                     .lin{
