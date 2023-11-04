@@ -5,5 +5,5 @@ django-bootstrap-v5===1.0.11
 Pillow
 django-easy-pdf3 0.1.4
 
-#this pc is currently in use!!! please move to the next one?
+
 
