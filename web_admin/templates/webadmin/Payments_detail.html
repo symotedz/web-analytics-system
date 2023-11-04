@@ -11,10 +11,10 @@
           </div>
           <div class="row">
             <div class="col m-1">
-            <button class="btn btn-danger"><a href="{% url 'Payments_delete'  %}" class="delete" style="color:white;">Delete All</a></button>
+            <button class="btn btn-danger"><a href="{% url 'web_admin:Payments_delete'  %}" class="delete" style="color:white;">Delete All</a></button>
             </div>
             <div class="col">
-               <a href="{% url 'Payment_create' %}"><button class="btn btn-primary">Add New</button></a> 
+               <a href="{% url 'web_admin:Payment_create' %}"><button class="btn btn-primary">Add New</button></a> 
             </div>
           </div>
           <table class="table table-striped table-hover table-bordered">
@@ -36,9 +36,9 @@
         <td scope="row">{{ company_Payment.amount }}</td>
         <td scope="row">{{ company_Payment.timestamp }}</td>
         <td>
-              <a href="{% url 'Payment_detail' company_Payment.pk %}" class="view" title="View" data-toggle="tooltip"><i class="material-icons">&#xE417;</i>View</a>
-              <a href="{% url 'Payment_update' company_Payment.pk %}" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i>Edit</a>
-              <a href="{% url 'Payment_delete' company_Payment.pk %}" class="delete" title="delete" data-toggle="tooltip"><i class="material-icons">&#xE517;</i>Delete</a>
+              <a href="{% url 'web_admin:Payment_detail' company_Payment.pk %}" class="view" title="View" data-toggle="tooltip"><i class="material-icons">&#xE417;</i>View</a>
+              <a href="{% url 'web_admin:Payment_update' company_Payment.pk %}" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i>Edit</a>
+              <a href="{% url 'web_admin:Payment_delete' company_Payment.pk %}" class="delete" title="delete" data-toggle="tooltip"><i class="material-icons">&#xE517;</i>Delete</a>
        </td>
       </tr>
     {% endfor %}
