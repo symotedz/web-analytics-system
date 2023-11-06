@@ -52,6 +52,10 @@ class class_blockSerializer(serializers.ModelSerializer):
         model = class_block
         fields = "__all__"
 
+class TransportationRequestSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = TransportationRequest
+        fields = "__all__"
 
 
 

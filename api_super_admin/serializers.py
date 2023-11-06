@@ -50,6 +50,11 @@ class LibraryItemSerializer(serializers.ModelSerializer):
     class Meta:
         model = LibraryItem
         fields = '__all__'
+
+class TransportationRequestSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = TransportationRequest
+        fields = "__all__"
         
 class LibraryItemCopySerializer(serializers.ModelSerializer):
     class Meta:

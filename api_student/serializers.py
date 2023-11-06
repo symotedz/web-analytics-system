@@ -41,3 +41,33 @@ class SubjectSerializer(serializers.ModelSerializer):
         model = Subject 
         fields = "__all__"
 
+class School_blocksSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = School_blocks
+        fields = "__all__"
+
+class class_blockSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = class_block
+        fields = "__all__"
+
+class ExamSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Exam 
+        fields = "__all__"
+
+class TimeTableSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = TimeTable 
+        fields = "__all__"
+
+class TransportationRouteSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = TransportationRoute
+        fields = "__all__"
+    
+class TransportationRequestSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = TransportationRequest
+        fields = "__all__"
+
