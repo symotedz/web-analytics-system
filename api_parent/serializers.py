@@ -17,4 +17,8 @@ class EventSerializer(serializers.ModelSerializer):
         model = Event 
         fields = "__all__"
 
+class ExamResultSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Exam 
+        fields = "__all__"
 

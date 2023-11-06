@@ -20,5 +20,24 @@ class StudentSerializer(serializers.ModelSerializer):
     class Meta:
         model = Student 
         fields = "__all__"
-        
+
+class FeeSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Fee 
+        fields = "__all__"
+
+class AssignmentSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Assignment
+        fields = "__all__"
+
+class ElearningSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = ELearning
+        fields = "__all__"
+
+class SubjectSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Subject 
+        fields = "__all__"
 
