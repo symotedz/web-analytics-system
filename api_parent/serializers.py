@@ -22,3 +22,36 @@ class ExamResultSerializer(serializers.ModelSerializer):
         model = Exam 
         fields = "__all__"
 
+class AssignmentSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Assignment
+        fields = "__all__"
+
+class SubjectSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Subject 
+        fields = "__all__"
+
+class FeeSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Fee 
+        fields = "__all__"
+
+class AttendanceSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Attendance
+        fields = "__all__"
+
+class School_blocksSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = School_blocks
+        fields = "__all__"
+
+class class_blockSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = class_block
+        fields = "__all__"
+
+
+
+
