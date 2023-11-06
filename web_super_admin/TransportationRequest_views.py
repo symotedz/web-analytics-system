@@ -34,7 +34,7 @@ def TransportationRequest_detail(request, pk):
         'transportationRequest' : transportationRequest
     }
     return render(request, 'Dashboard/TransportationRequest_detail.html', context)
-
+                                                                                    
 # view for updating a single user
 def TransportationRequest_update(request, pk):
     transportationRequest = get_object_or_404(TransportationRequest, pk=pk)
