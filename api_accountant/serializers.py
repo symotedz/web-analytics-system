@@ -1,4 +1,3 @@
-from rest_framework import serializer
 import datetime as datetime
 
 from django.shortcuts import render, redirect, get_object_or_404
@@ -12,12 +11,12 @@ class StaffSerializer(serializers.ModelSerializer):
         model = Staff 
         fields = "__all__"
 
-class FeeSerializer(serializer.ModelSerializer):
+class FeeSerializer(serializers.ModelSerializer):
     class Meta:
         model = Fee 
         fields = "__all__"
 
-class NoticeSerializer(serializer.ModelSerializer):
+class NoticeSerializer(serializers.ModelSerializer):
     class Meta:
         model  = Notice 
         fields = "__all__"

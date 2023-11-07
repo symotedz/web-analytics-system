@@ -5,6 +5,9 @@ from rest_framework import generics
 from .serializers import *
 from web_super_admin.models import *
 
+def index(request):
+    return HttpResponse("hello a teacher api")
+
 
 class TeacherListCreateView(generics.ListCreateAPIView):
     queryset = Teacher.objects.all()
