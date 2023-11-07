@@ -59,7 +59,6 @@ class ELearningListCreateView(generics.ListCreateAPIView):
     queryset = ELearning.objects.all()
     serializer_class = ELearningSerializer
 
-
     
 class MessageListCreateView(generics.ListCreateAPIView):
     queryset = Message.objects.all()
