@@ -40,7 +40,7 @@
   <header id="header" class="header fixed-top d-flex align-items-center">
 
     <div class="d-flex align-items-center justify-content-between">
-      <a href="{% url 'index' %}" class="logo d-flex align-items-center">
+      <a class="logo d-flex align-items-center">
         <img src="{% static 'img/logo.png'  %}" alt="">
         <span class="d-none d-lg-block">Analytics System</span>
       </a>
@@ -218,7 +218,7 @@
     <ul class="sidebar-nav" id="sidebar-nav">
 
       <li class="nav-item">
-        <a class="nav-link " href="{% url 'index' %}">
+        <a class="nav-link " >
           <i class="bi bi-grid"></i>
           <span>Dashboard</span>
         </a>
@@ -255,7 +255,7 @@
 <!------------------------------------------------------------------------------------>
       <li class="nav-item">
         <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
-          <i class="bi bi-journal-text"></i><span>Aanalytics</span><i class="bi bi-chevron-down ms-auto"></i>
+          <i class="bi bi-journal-text"></i><span>Analytics</span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
         <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           
@@ -423,7 +423,7 @@
     <h1>Dashboard</h1>
     <nav>
       <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="{% url 'index' %}">Home</a></li>
+        <li class="breadcrumb-item"><a >Home</a></li>
         <li class="breadcrumb-item active">Dashboard</li>
       </ol>
     </nav>

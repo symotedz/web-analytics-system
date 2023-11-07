@@ -1,4 +1,4 @@
-{% extends "Dashboard/base.html" %}
+{% extends "webadmin/base.html" %}
 
 {% block content %}
      <!-- Left side columns -->
@@ -8,7 +8,7 @@
       <form method="post">
         {% csrf_token %}
         <div class="mb-3">
-          <label for="employment_id" class="form-label">Employment ID</label>
+          <label for="employment_id" class="form-label">Event ID</label>
           <input type="number" class="form-control" id="employment_id" name="employment_id" required>
         </div>
         <button type="submit" class="btn btn-danger">Delete</button>
