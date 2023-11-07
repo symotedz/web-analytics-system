@@ -35,4 +35,15 @@ class EventSerializer(serializers.ModelSerializer):
 
 class StudentSerializer(serializers.ModelSerializer):
     class Meta:
+        model = Student
+        fields = "__all__"
+
+class StaffSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Staff 
+        fields = "__all__"
+
+class OpportunitiesSerializer(serializers.ModelSerializer):
+    class Meta:
+        model  = Opportunities
         fields = "__all__"
