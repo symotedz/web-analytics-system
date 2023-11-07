@@ -18,6 +18,16 @@ Symotedz analytics system
 
 <h6>The instructions are provided by @simokamaa -github && @kamauwaweru11 -twitter account && @simonkamau -linkedin account
 
+# running the project
+1) pip install requirements.txt
+
+2) run python manage.py makemigrations
+
+3) python manage.py migrate 
+
+4) head on localhost:8000
+
+5) you can start testing the endpoints for api
 
  licensed under GPL-3.0 https://www.gnu.org/licenses/gpl-3.0.en.html
 
