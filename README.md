@@ -31,5 +31,7 @@ Symotedz analytics system
 
  licensed under GPL-3.0 https://www.gnu.org/licenses/gpl-3.0.en.html
 
+ more infor https://github.com/symotedz/web-analytics-system/commit/b3abf8190dec737335837246870adabfe6f0757a
+
 
 
