@@ -33,5 +33,7 @@ Symotedz analytics system
 
  more infor https://github.com/symotedz/web-analytics-system/blob/analyticsweb/system.md
 
+ #this computer is currently under use
+
 
 
