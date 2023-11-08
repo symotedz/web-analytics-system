@@ -64,5 +64,7 @@ def TransportationRequests_delete(request):
     transportationRequest.delete()
     return redirect('/super_admin/TransportationRequest_detail/')
 
+
+
         
     
