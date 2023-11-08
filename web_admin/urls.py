@@ -8,7 +8,6 @@ from . import ELearning_views, Message_views, TimeTable_views, ExamResult_views
 app_name='web_admin'
 
 
-
 urlpatterns = [
     path('', views.index, name= 'web_admin_index'),
     
