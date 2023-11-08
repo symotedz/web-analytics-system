@@ -62,7 +62,7 @@ ________________________________________________________________________________
    - Integrate mechanisms for fault tolerance and recovery, such as circuit breakers.
    - Ensures system reliability and availability.
 
-### Application Platforms:
+### Application Platforms:          
 
 1. **Web Application:**
    - Developed using a modern web framework (e.g., React, Angular, or Vue.js).
