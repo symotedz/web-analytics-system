@@ -63,6 +63,9 @@ INSTALLED_APPS = [
     'bootstrap5',
     'rest_framework',
     'easy_pdf',
+    'pdf',
+    'dataAnalysis',
+    'socialmedia',
 ]
 
 MIDDLEWARE = [
@@ -117,6 +120,7 @@ AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
     },
+
     {
         'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
     },
