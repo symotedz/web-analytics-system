@@ -26,7 +26,7 @@ def class_result_pdf(request, pk):
           'adm_number' : adm_number
      }
 
-     template = get_template("pdf/exam_result_pdf.html")
+     template = get_template("pdf/class_result.html")
      exam_result_html = template.render(class_result_data)
 
      response = HttpResponse(content_type = "application/pdf")

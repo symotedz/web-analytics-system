@@ -27,7 +27,7 @@ def subject_result_pdf(request, pk):
      }
 
      template = get_template("pdf/subject_result_pdf.html")
-     exam_result_html = template.render(exam_result_data)
+     exam_result_html = template.render(subject_result_data)
 
      response = HttpResponse(content_type = "application/pdf")
      response['Content-Disposition'] = 'file_name = "subject_result.pdf"'
