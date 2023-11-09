@@ -43,3 +43,6 @@ ________________________________________________________________________________
 
 +++++++++++++++++++SYSTEMS PACKAGES PLAN
 
+
+using xhtml2pdf to generate pdfs automatically
+
