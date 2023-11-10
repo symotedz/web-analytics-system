@@ -12,27 +12,6 @@ class Student:
     def get_overall_grade(self):
         return self.overall_grade
 
-class Class:
-    def __init__(self, name, students):
-        self.name = name
-        self.students = students
-
-    def get_average_grade(self):
-        average_grade = 0
-        for student in self.students:
-            average_grade += student.get_overall_grade()
-        return average_grade / len(self.students)
-
-class School:
-    def __init__(self, name, classes):
-        self.name = name
-        self.classes = classes
-
-    def get_average_grade(self):
-        average_grade = 0
-        for class_ in self.classes:
-            average_grade += class_.get_average_grade()
-        return average_grade / len(self.classes)
 
 def read_data(filename):
     students = []
