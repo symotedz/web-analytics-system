@@ -6,6 +6,10 @@ Pillow
 django-easy-pdf3===0.1.4
 djangorestframework
 xhtml2pdf
+numpy
+pandas
+scipy
+seaborn
 
 
 
