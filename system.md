@@ -19,6 +19,8 @@ Responsible for system renewal payment
 
 Responsible for manipulating and handling other system interfaces
 
+Making Announcements
+
 2) - ADMIN
 ---------------------------------------
 Responsible for all roles that are subject to super-admin except :
@@ -26,6 +28,8 @@ Responsible for all roles that are subject to super-admin except :
 Renewal Payment
 
 Rulling super admin
+
+
 
 3) - ACCOUNTANT
 ---------------------------------------
