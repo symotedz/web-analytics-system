@@ -15,8 +15,9 @@ class Teacher(models.Model):
     last_name = models.CharField(max_length=200)
     previous_school = models.CharField(max_length=200)
     teaching_subjects = models.CharField(max_length=200)
-    start_date = models.DateTimeField(auto_now = True)
-    role = models.CharField(max_length =200)
+    joining_date = models.DateTimeField(auto_now = True)
+    status = models.BooleanField(default=True)
+    profile_photo = models.ImageField(upload_to="upload/", default="a.png", null=True, blank=True)
     
     def __str__(self):
         return self.first_name
@@ -53,8 +54,8 @@ class Student(models.Model):
     school_block = models.ForeignKey(School_blocks, on_delete=models.CASCADE)
     class_name = models.ForeignKey(class_block, on_delete=models.CASCADE)
     date_of_birth = models.DateTimeField(max_length=200)
-    prevoius_school = models.CharField(max_length=200)
-    prevoius_grade = models.CharField(max_length=200)
+    previous_school = models.CharField(max_length=200)
+    previous_grade = models.CharField(max_length=200)
     profile_picture = models.ImageField(upload_to='upload/', default="a.png")
     guardian_first_name = models.CharField(max_length=200)
     guardian_middle_name = models.CharField(max_length=200)
@@ -232,3 +233,4 @@ class TimeTable(models.Model):
     time = models.TimeField(null=True, blank=True)
     activity = models.CharField(max_length=255, null=True, blank=True)
     date_produced = models.DateField(auto_now = True, null=True, blank=True)
+
