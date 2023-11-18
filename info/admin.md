@@ -1,5 +1,9 @@
 # Admin portal plan
 
+=====================================================================================================================================
+    Convinitently and acculately evaluate learners and get data to help visualize academic growth from comfort of their mobile phone
+======================================================================================================================================
+
 All super Admin capabilities except:
 
 1) Being to process system renewal payments
