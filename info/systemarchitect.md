@@ -15,6 +15,8 @@ ________________________________________________________________________________
    - **Academic Management Microservice:**
      - Manages student information, assessments, and academic records.
      - Integrates with the data analysis module for statistical insights.
+     - generate detailed spreadsheet and PDF report forms, transcript, etc
+     - Enter assesment results via the app from the comfort of the home
 
    - **Billing and Payment Microservice:**
      - Handles billing, fee transactions, and integrates with the payment gateway.
@@ -23,6 +25,7 @@ ________________________________________________________________________________
    - **Communication Microservice:**
      - Manages messaging, both within the system and through external channels.
      - Integrates with social media platforms for broader communication.
+     - Sending text messages to multiple parents with a single button click
 
    - **Attendance Microservice:**
      - Tracks student attendance using biometric or RFID systems.
