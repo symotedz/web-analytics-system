@@ -17,6 +17,9 @@ ________________________________________________________________________________
      - Integrates with the data analysis module for statistical insights.
      - generate detailed spreadsheet and PDF report forms, transcript, etc
      - Enter assesment results via the app from the comfort of the home
+     - Exams Upload
+     - Check Student's bio
+     - view Messages
 
    - **Billing and Payment Microservice:**
      - Handles billing, fee transactions, and integrates with the payment gateway.
