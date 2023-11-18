@@ -40,7 +40,7 @@
   <header id="header" class="header fixed-top d-flex align-items-center">
 
     <div class="d-flex align-items-center justify-content-between">
-      <a href="{% url 'index' %}" class="logo d-flex align-items-center">
+      <a href="{% url 'web_librarian:index' %}" class="logo d-flex align-items-center">
         <img src="{% static 'img/logo.png'  %}" alt="">
         <span class="d-none d-lg-block">Analytics System</span>
       </a>
@@ -218,7 +218,7 @@
     <ul class="sidebar-nav" id="sidebar-nav">
 
       <li class="nav-item">
-        <a class="nav-link " href="{% url 'index' %}">
+        <a class="nav-link " href="{% url 'web_librarian:index' %}">
           <i class="bi bi-grid"></i>
           <span>Dashboard</span>
         </a>
@@ -292,7 +292,7 @@
         </a>
         <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <a href="{% url 'notices_detail' %}">
+            <a href="{% url 'web_librarian:notices_detail' %}">
               <i class="bi bi-circle"></i><span>Notice</span>
             </a>
           </li>

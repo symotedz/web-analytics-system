@@ -1,10 +1,10 @@
 from django.urls import path      
-from . import views, books_render_views, books_views
+from . import views, books_render_views, books_views, notices_views
 
 app_name = 'web_librarian'
 
 urlpatterns = [
-    path('', views.index),
+    path('', views.index, name='index'),
     
     # url routes for books rendering
     path('book_render_create/', books_render_views.book_render_create, name='book_render_create'),
@@ -21,4 +21,7 @@ urlpatterns = [
     path('Book_Detail/<int:pk>/', books_views.Book_Detail, name='Book_Detail'),
     path('Book_Update/<int:pk>/', books_views.Book_Update, name='Book_Update'),
     path('Book_delete/<int:pk>/', books_views.Book_delete, name='Book_delete'),
+
+    # view urls
+    path('notices/', notices_views.Notices, name="Notices"),
 ]
