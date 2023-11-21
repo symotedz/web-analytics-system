@@ -45,4 +45,6 @@ ________________________________________________________________________________
 
 
 using xhtml2pdf to generate pdfs automatically
+Using built in csv module from python to generate csv files
+Using data science libraries to read uploaded csv files and Analyze them:::specifically(numpy, pandas)
 
