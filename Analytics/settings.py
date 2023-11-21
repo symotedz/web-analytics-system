@@ -33,7 +33,7 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
     ]
 }
-
+# currently under use
 # Application definition
 
 INSTALLED_APPS = [
@@ -66,6 +66,7 @@ INSTALLED_APPS = [
     'pdf',
     'dataAnalysis',
     'socialmedia',
+    'csv',
 ]
 
 MIDDLEWARE = [
