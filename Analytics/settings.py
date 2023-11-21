@@ -99,6 +99,8 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'Analytics.wsgi.application'
 
+# the computer is currently under active use, shift to the next one
+
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
