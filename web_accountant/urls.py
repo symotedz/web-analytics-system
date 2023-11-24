@@ -1,5 +1,5 @@
 from django.urls import path
-from . import views, fee_views, student_view
+from . import views, fee_views, student_view, staff_views
 
 app_name  = 'web_accountant'
 
@@ -15,7 +15,11 @@ urlpatterns = [
     path('fees_delete/', fee_views.fees_delete, name='fees_delete'),
 
     # urls for student
-       path('students_detail/', student_view.students_detail, name='students_detail'),
+    path('students_detail/', student_view.students_detail, name='students_detail'),
     path('student_detail/<int:pk>/', student_view.student_detail, name='student_detail'),
+
+    # urls for staff
+    path('staffs_detail/', staff_views.staffs_detail, name='staffs_detail'),
+    path('staff_detail/<int:pk>/', staff_views.staff_detail, name='staff_detail'),
     
 ]
