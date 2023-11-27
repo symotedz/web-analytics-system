@@ -19,3 +19,18 @@ def CashOutCreate(request):
         }
         return render(request, "index.html", context)
     
+def CashOutUpdate(request, pk):
+    cashout = get_object_or_404(CashOut, pk=pk)
+    form  = CashOutForm(request.POST, instance = cashout)
+    if request.method == "POST":
+        form = form 
+        if form.is_valid():
+            form.save()
+            return redirect("/")
+    else:
+        form = form
+        context = {
+            "form" : form
+        }
+        return render(request, "index.html", context)
+    
