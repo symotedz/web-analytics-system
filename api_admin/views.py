@@ -195,5 +195,13 @@ class TimeTableRetrieveUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):
 class TimeTableRetrieveUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):
     queryset  = TimeTable.objects.all()
     serializer_class = TimeTableSerializer
+
+class MessagesListCreateView(generics.ListCreateAPIView):
+    queryset = Message.objects.all()
+    serializer_class = MessageSerializer
+
+class MessagesRetrieveUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):
+    queryset = Message.objects.all()
+    serializer_class = MessageSerializer
     
     
