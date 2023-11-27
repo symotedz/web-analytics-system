@@ -1,5 +1,5 @@
 from django.urls import path
-from . import views, fee_views, student_view, staff_views
+from . import views, fee_views, student_view, staff_views, CashOut_view
 
 app_name  = 'web_accountant'
 
