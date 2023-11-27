@@ -16,6 +16,7 @@ urlpatterns = [
 
     # urls for cashout
     path('CashOutCreate/', CashOut_view.CashOutCreate, name= "CashOutCreate"),
+    path('CashOutUpdate/<int:pk>/', CashOut_view.CashOutUpdate, name="CashOutUpdate"),
 
     # urls for student
     path('students_detail/', student_view.students_detail, name='students_detail'),
