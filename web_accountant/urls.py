@@ -14,6 +14,9 @@ urlpatterns = [
     path('fee_delete/<int:pk>/', fee_views.fee_delete, name='fee_delete'),
     path('fees_delete/', fee_views.fees_delete, name='fees_delete'),
 
+    # urls for cashout
+    path('CashOutCreate/', CashOut_view.CashOutCreate, name= "CashOutCreate"),
+
     # urls for student
     path('students_detail/', student_view.students_detail, name='students_detail'),
     path('student_detail/<int:pk>/', student_view.student_detail, name='student_detail'),
