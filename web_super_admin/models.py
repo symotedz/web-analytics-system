@@ -234,3 +234,8 @@ class TimeTable(models.Model):
     activity = models.CharField(max_length=255, null=True, blank=True)
     date_produced = models.DateField(auto_now = True, null=True, blank=True)
 
+class CashOut(models.Model):
+    name = models.CharField(max_length=255, null=True, blank=True)
+    amount = models.PositiveIntegerField()
+    date = models.DateTimeField(auto_now_add=True)
+    reason = models.TextField()
