@@ -9,48 +9,93 @@ from web_super_admin.models import *
 def index(request):
     return HttpResponse("Hello World")
 
+# view for listing and creating
 class PlanListCreateView(generics.ListCreateAPIView):
+    queryset = Plan.objects.all()
+    serializer_class = PlanSerializer
+
+class PlanRetrieveUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):
     queryset = Plan.objects.all()
     serializer_class = PlanSerializer
     
 class TeacherListCreateView(generics.ListCreateAPIView):
     queryset = Teacher.objects.all()
     serializer_class = TeacherSerializer
+
+class TeacherRetrieveUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):
+    queryset = Teacher.objects.all()
+    serializer_class = TeacherSerializer
     
 class StaffListCreateView(generics.ListCreateAPIView):
+    queryset = Staff.objects.all()
+    serializer_class = StaffSerializer
+
+class StaffRetrieveUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):
     queryset = Staff.objects.all()
     serializer_class = StaffSerializer
     
 class School_blocksListCreateView(generics.ListCreateAPIView):
     queryset = School_blocks.objects.all()
     serializer_class = School_blocksSerializer
-    
+
+class School_blockRetrieveUpdateDestroy(generics.RetrieveUpdateDestroyAPIView):
+    queryset  = School_blocks.objects.all()
+    serializer_class = School_blocksSerializer
+
+
 class class_blockListCreateView(generics.ListCreateAPIView):
     queryset = class_block.objects.all()
     serializer_class = class_blockSerializer
     
+class class_blockRetrieveUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):
+    queryset = class_block.objects.all()
+    serializer_class = class_blockSerializer
+
 class StudentListCreateView(generics.ListCreateAPIView):
+    queryset = Student.objects.all()
+    serializer_class = StudentSerializer
+
+class StudentRetrieveUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):
     queryset = Student.objects.all()
     serializer_class = StudentSerializer
     
 class class_createListCreateView(generics.ListCreateAPIView):
     queryset = class_create.objects.all()
     serializer_class = class_createSerializer
+
+class classRetrieveUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):
+    queryset = class_create.objects.all()
+    serializer_class = class_createSerializer
     
 class FeeListCreateView(generics.ListCreateAPIView):
     queryset = Fee.objects.all()
     serializer_class = FeeSerializer
-    
+
+class FeeRetrieveUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):
+    queryset = Fee.objects.all()
+    serializer_class  = FeeSerializer
 class LibraryCategoryListCreateView(generics.ListCreateAPIView):
+    queryset = LibraryCategory.objects.all()
+    serializer_class = LibraryCategorySerializer
+
+class LibraryCategoryRetrieveUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):
     queryset = LibraryCategory.objects.all()
     serializer_class = LibraryCategorySerializer
     
 class LibraryItemListCreateView(generics.ListCreateAPIView):
     queryset = LibraryItem.objects.all()
     serializer_class = LibraryItemSerializer
+
+class LibraryItemRetrieveUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):
+    queryset = LibraryItem.objects.all()
+    serializer_class = LibraryItemSerializer
     
 class LibraryItemCopyListCreateView(generics.ListCreateAPIView):
     queryset = LibraryItemCopy.objects.all()
+    serializer_class = LibraryItemCopySerializer
+
+class LibraryItemCopyRetrieveUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):
+    queryset =  LibraryItemCopy.objects.all()
     serializer_class = LibraryItemCopySerializer
     
 class LibraryReservationListCreateView(generics.ListCreateAPIView):

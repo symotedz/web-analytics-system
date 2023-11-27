@@ -1,6 +1,7 @@
 from web_super_admin.models import *
 from rest_framework import serializers
 
+
 class PlanSerializer(serializers.ModelSerializer):
     class Meta:
         model = Plan
