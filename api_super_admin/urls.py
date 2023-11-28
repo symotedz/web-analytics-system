@@ -18,6 +18,8 @@ from . views import MessageListCreateView, MessageRetrieveUpdateDestroyView, Tim
 
 app_name = 'api_super_admin'
 
+# an issue on school block
+
 urlpatterns = [
     path('', views.index, name = 'web_super_admin_index'),
 
@@ -118,7 +120,7 @@ urlpatterns = [
     path('opportunity/<int:pk>/', OpportunitiesRetrieveUpdateDestroyView.as_view(), name='OpportunitiesRetrieveUpdateDestroyView'),
 
     # urls for elearning
-    path('eleranings/', ELearningListCreateView.as_view(), name='ELearningListCreateView'),
+    path('elearnings/', ELearningListCreateView.as_view(), name='ELearningListCreateView'),
     path('elearning/<int:pk>/', ELearningRetrieveUpdateDestroyView.as_view(), name='ELearningRetrieveUpdateDestroyView'),
 
     # urls for messages
