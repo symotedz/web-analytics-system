@@ -46,18 +46,38 @@ class StaffListCreateView(generics.ListCreateAPIView):
     staffs =  Staff.objects.all()
     serializer_class = StaffSerializer
 
+class StaffRetrieveUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):
+    staff  = Staff.objects.all()
+    serializer_class = StaffSerializer
+
 class NoticeListCreateView(generics.ListCreateAPIView):
     notices = Notice.objects.all()
+    serializer_class = NoticeSerializer
+
+class NoticeRetrieveUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):
+    notice = Notice.objects.all()
     serializer_class = NoticeSerializer
 
 class EventListCreateView(generics.ListCreateAPIView):
     notices  = Event.objects.all()
     serializer_class = EventSerializer
 
+class EventRetrieveUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):
+    event = Event.objects.all()
+    serializer_class = EventSerializer
+
 class StudentListCreateView(generics.ListCreateAPIView):
     students = Student.objects.all()
     serializer_class = StudentSerializer
 
+class StudentRetrieveUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):
+    students  = Student.objects.all()
+    serializer_class = StudentSerializer
+
 class OpportunitiesListCreateView(generics.ListCreateAPIView):
+    opportunities = Opportunities.objects.all()
+    serializer_class = OpportunitiesSerializer
+
+class OpportunitiesRetrieveUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):
     opportunities = Opportunities.objects.all()
     serializer_class = OpportunitiesSerializer
