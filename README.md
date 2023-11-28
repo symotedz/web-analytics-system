@@ -1,8 +1,9 @@
 # ANALYTICS SYSTEM
-## ANDROID :: IOS :: WEB  :: DESKTOP
- django backend analytics system
+## ANDROID :: IOS :: WEB  :: DESKTOP 
+Backend Analytics System
+Web part
 
-Symotedz analytics system
+## Symotedz Analytics System
 
 # instructions
 1) Fork the Repository
