@@ -83,9 +83,17 @@ class AttendanceListCreateView(generics.ListCreateAPIView):
     attendance = Attendance.objects.all()
     serializer_class = AttendanceSerializer
 
+class AttendanceRetrieveUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):
+    attendance = Attendance.objects.all()
+    serializer_class = AttendanceSerializer
+
 class School_blocksListCreateView(generics.ListCreateAPIView):
     school_blocks = School_blocks.objects.all()
     serializer_class = School_blocksSerializer 
+
+class School_blocksRetrieveUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):
+    queryset = School_blocks.objects.all()
+    serializer_class = School_blocksSerializer
 
 class TransportationRequestListCreateView(generics.ListCreateAPIView):
     transporationRequest = TransportationRequest.objects.all()

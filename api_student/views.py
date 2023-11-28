@@ -7,6 +7,8 @@ from web_super_admin.models import *
 from .serializers import *
 # Create your views here.
 
+# key issues attendance and class blocks and transportation request
+
 def index(request):
     return HttpResponse("Hello,World")
 
