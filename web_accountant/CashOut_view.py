@@ -34,3 +34,19 @@ def CashOutUpdate(request, pk):
         }
         return render(request, "index.html", context)
     
+def CashOutDelete(request, pk):
+    cashout = get_object_or_404(CashOut, pk=pk)
+    cashout.delete()
+    return redirect('/')
+
+def CashOutDeletes(request):
+    cashout = CashOut.objects.all()
+    cashout.delete()
+    return redirect('/')
+
+def cashoutdetail(request, pk):
+    cashout = get_object_or_404(CashOut, pk=pk)
+    context = {
+        'cashout' : cashout
+    }
+    return render(request, "index.html", context)
