@@ -11,6 +11,8 @@ from . views import TransportationRouteListCreateView, TransportationRouteRetrie
 
 app_name = 'api_student'
 
+# issue transportation request
+
 urlpatterns = [
     path('', views.index),
 
