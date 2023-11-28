@@ -1,4 +1,4 @@
-# web-analytics-system
+# ANALYTICS SYSTEM
  django backend analytics system
 
 Symotedz analytics system
