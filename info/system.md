@@ -59,3 +59,10 @@ Using data science libraries to read uploaded csv files and Analyze them:::speci
 - Communication Management Module: This module sends notifications to students, parents, and staff.
 - Reporting Module: This module generates reports on various aspects of the school, such as student performance, staff attendance, and financial performance.
 
+# issues on the system 
+1) - api super admin - # issues on transportation request
+2) - Api super admin - # issue on school block
+3) - API parent - # issue on transportaion request
+4) - 
+
+
