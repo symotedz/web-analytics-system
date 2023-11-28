@@ -47,3 +47,8 @@ class OpportunitiesSerializer(serializers.ModelSerializer):
     class Meta:
         model  = Opportunities
         fields = "__all__"
+
+class LibraryItemCopySerializer(serializers.ModelSerializer):
+    class Meta:
+        model = LibraryItemCopy
+        fields = "__all__"

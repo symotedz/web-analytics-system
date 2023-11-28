@@ -12,13 +12,35 @@ class LibraryCategoryListCreateView(generics.ListCreateAPIView):
     libraryCategory = LibraryCategory.objects.all()
     serializer_class = LibraryCategorySerializer
 
+
+class LibraryCategoryRetrieveUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):
+    queryset = LibraryCategory.objects.all()
+    serializer_class = LibraryCategorySerializer
+
 class  LibraryItemListCreateView(generics.ListCreateAPIView):
     libraryItem =  LibraryItem.objects.all()
     serializer_class =  LibraryItemSerializer
 
+
+class LibraryItemRetrieveUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):
+    queryset = LibraryItem.objects.all()
+    serializer_class = LibraryItemSerializer
+
 class  LibraryReservationListCreateView(generics.ListCreateAPIView):
     libraryReservation =  LibraryReservation.objects.all()
     serializer_class =  LibraryReservationSerializer
+
+class LibraryReservationRetrieveUpdateDestroy(generics.RetrieveUpdateDestroyAPIView):
+    queryset = LibraryReservation.objects.all()
+    serializer_class = LibraryReservationSerializer
+
+class LibraryItemCopyListCreateView(generics.ListCreateAPIView):
+    queryset = LibraryItemCopy.objects.all()
+    serializer_class = LibraryItemCopySerializer
+
+class LibraryItemCopyRetrieveUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):
+    queryset =  LibraryItemCopy.objects.all()
+    serializer_class = LibraryItemCopySerializer
 
 class StaffListCreateView(generics.ListCreateAPIView):
     staffs =  Staff.objects.all()
