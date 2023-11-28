@@ -39,6 +39,7 @@ class StudentListCreateView(generics.ListCreateAPIView):
     serializer_class = StudentSerializer
 
 class StudentRetrieveUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):
+    queryset = Student.objects.all()
     serializer_class = StudentSerializer
 
 class FeeListCreateView(generics.ListCreateAPIView):
@@ -88,6 +89,15 @@ class SubjectListCreateView(generics.ListCreateAPIView):
 class SubjectRetrieveUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):
     subject = Subject.objects.all()
     serializer_class = SubjectSerializer
+
+
+class class_blockListCreateView(generics.ListCreateAPIView):
+    classblocks = class_block.objects.all()
+    serializer_class = class_blockSerializer
+
+class class_blockRetrieveUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):
+    classblocks = class_block.objects.all()
+    serializer_class = class_blockSerializer
 
 class TimeTableListCreateView(generics.ListCreateAPIView):
     timetable = TimeTable.objects.all()
