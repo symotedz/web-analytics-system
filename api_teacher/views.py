@@ -78,7 +78,7 @@ class AttendanceListCreateView(generics.ListCreateAPIView):
     queryset = Attendance.objects.all()
     serializer_class = AttendanceSerializer
 
-class AttendanceRetrieveUpdateDestroeView(generics.RetrieveUpdateDestroyAPIView):
+class AttendanceRetrieveUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):
     queryset = Attendance.objects.all()
     serializer_class = AttendanceSerializer
     
