@@ -50,3 +50,10 @@ def cashoutdetail(request, pk):
         'cashout' : cashout
     }
     return render(request, "index.html", context)
+
+def cashoutdetails(request):
+    cashouts = CashOut.objects.all()
+    context = {
+        'cashouts' : cashouts
+    }
+    return render(request, "index.html", context)
