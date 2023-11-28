@@ -67,7 +67,7 @@ class class_createListCreateView(generics.ListCreateAPIView):
     queryset = class_create.objects.all()
     serializer_class = class_createSerializer
 
-class classRetrieveUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):
+class class_createRetrieveUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):
     queryset = class_create.objects.all()
     serializer_class = class_createSerializer
     
