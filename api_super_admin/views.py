@@ -190,7 +190,7 @@ class TransportationStopOrderListCreateView(generics.ListCreateAPIView):
     queryset = TransportationStopOrder.objects.all()
     serializer_class = TransportationStopOrderSerializer
 
-class TransportationStopOrderRetrieveUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):
+class TransportationStopOrderListRetrieveUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):
     queryset = TransportationStopOrder.objects.all()
     serializer_class = TransportationStopOrderSerializer
     

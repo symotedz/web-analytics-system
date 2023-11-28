@@ -1,6 +1,20 @@
 from django.urls import path
 from . import views
-from . views import *
+from . views import PlanListCreateView, PlanRetrieveUpdateDestroyView, TeacherListCreateView, TeacherRetrieveUpdateDestroyView
+from . views import StaffListCreateView, StaffRetrieveUpdateDestroyView, School_blocksListCreateView, School_blockRetrieveUpdateDestroy
+from . views import class_blockListCreateView, class_blockRetrieveUpdateDestroyView, StudentListCreateView, StudentRetrieveUpdateDestroyView
+from . views import class_createListCreateView, classRetrieveUpdateDestroyView, FeeListCreateView, FeeRetrieveUpdateDestroyView
+from . views import LibraryCategoryListCreateView, LibraryCategoryRetrieveUpdateDestroyView, LibraryItemListCreateView, LibraryItemRetrieveUpdateDestroyView
+from . views import LibraryItemCopyListCreateView, LibraryItemCopyRetrieveUpdateDestroyView, LibraryReservationListCreateView, LibraryReservationRetrieveUpdateDestroy
+from . views import EventListCreateView, EventRetrieveUpdateDestroyView, NoticeListCreateView, NoticeRetrieveUpdateDestroyView
+from . views import SubjectListCreateView, SubjectRetrieveUpdateDestroyView, ExamListCreateView, ExamRetrieveUpdateDestroyView
+from . views import ExamResultListCreateView, ExamResultRetrieveUpdateDestroyView, AttendanceListCreateView, AttendanceRetrieveUpdateDestroyView
+from . views import AssignmentListCreateView, AssignmentRetrieveUpdateDestroyView, GradeListCreateView, GradeRetrieveUpdateDestroyView
+from . views import TransportationRouteListCreateView, TransportationRouteRetrieveUpdateDestroyView
+from . views import TransportationStopListCreateView, TransportationStopRetrieveUpdateDestroyView
+from . views import TransportationStopOrderListCreateView,  TransportationStopOrderListRetrieveUpdateDestroyView
+from . views import OpportunitiesListCreateView, OpportunitiesRetrieveUpdateDestroyView, ELearningListCreateView, ELearningRetrieveUpdateDestroyView
+from . views import MessageListCreateView, MessageRetrieveUpdateDestroyView, TimeTableListCreateView, TimeTableRetrieveUpdateDestroyView
 
 app_name = 'api_super_admin'
 
