@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Analytics System</title>
+  <title>{{ system_name }}</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -42,7 +42,7 @@
     <div class="d-flex align-items-center justify-content-between">
       <a href="{% url 'web_super_admin:index' %}" class="logo d-flex align-items-center">
         <img src="{% static 'img/logo.png'  %}" alt="">
-        <span class="d-none d-lg-block">Analytics System</span>
+        <span class="d-none d-lg-block">{{ system_name }}</span>
       </a>
       <i class="bi bi-list toggle-sidebar-btn"></i>
     </div><!-- End Logo -->
