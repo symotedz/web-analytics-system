@@ -82,4 +82,6 @@ Using data science libraries to read uploaded csv files and Analyze them:::speci
 - There is one user login form only,,so depending on the input credential system should know the user, and redirect him/her to her interface
 - portal.
 - Login, Logout, Cookies, LocalStorage(indexedDB)
+- Implementing JWT(json web token)
+- Hashing the password and adding the salt 
 
