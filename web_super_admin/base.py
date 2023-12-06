@@ -1,6 +1,9 @@
 from datetime import datetime 
+import sys
 from django.shortcuts import render, redirect, get_object_or_404
-from Analytics.systemSettings import *
+from Analytics.config import *
+
+sys.path.append('../')
 
 
 system_name = SYSTEM_NAME

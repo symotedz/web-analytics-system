@@ -36,6 +36,7 @@ REST_FRAMEWORK = {
 # currently under use
 # Application definition
 
+
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',

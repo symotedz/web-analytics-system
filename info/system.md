@@ -66,3 +66,17 @@ Using data science libraries to read uploaded csv files and Analyze them:::speci
 4) - 
 
 
+## authentication system
+### The interfaces:::
+- Super Admin
+- Admin
+- Teacher
+- Accountant
+- Librarian
+- Student
+- Parent
+
+- Generating admin form in the super-admin and admin interface that will input the password
+- And Then other interfaces will login to the portal using username and password provided.
+- Admin will be provided login credentials from super-admin portal
+
