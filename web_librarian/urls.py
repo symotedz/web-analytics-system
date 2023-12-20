@@ -1,5 +1,6 @@
 from django.urls import path      
 from . import views, books_render_views, books_views, notices_views
+from . OpportunityView import opportunity_detail, opportunity_list
 
 app_name = 'web_librarian'
 
@@ -24,4 +25,8 @@ urlpatterns = [
 
     # view urls
     path('notices/', notices_views.Notices, name="Notices"),
+
+    # Ulrs for Opportunity
+    path('opportunities/', opportunity_list, name='opportunity_list'),
+    path('opportunity/<int:pk>/', opportunity_detail, name='opportunity_detail'),
 ]
