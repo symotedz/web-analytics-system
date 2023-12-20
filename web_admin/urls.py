@@ -4,6 +4,8 @@ from . import library_views, exam_views, assignment_views, grade_views, Transpor
 from . import TransportationStopOrder_views, TransportationStop_views, TransportationRoute_views
 from . import Notice_views, Event_views, Plan_views, School_blocks_views, class_block_views
 from . import ELearning_views, Message_views, TimeTable_views, ExamResult_views
+from . OpportunityView import opportunity_create, opportunity_delete, opportunity_detail, opportunity_edit, opportunity_list 
+
 
 app_name='web_admin'
 
@@ -186,4 +188,11 @@ urlpatterns = [
     path('ExamResult_update/<int:pk>/', ExamResult_views.ExamResult_update, name='ExamResult_update'),
     path('ExamResult_delete/<int:pk>/', ExamResult_views.ExamResult_delete, name='ExamResult_delete'),
     path('ExamResults_delete/', ExamResult_views.ExamResults_delete, name='ExamResults_delete'),
+
+    # Urls for Opportunities 
+    path('opportunities/', opportunity_list, name='opportunity_list'),
+    path('opportunities/<int:pk>/', opportunity_detail, name='opportunity_detail'),
+    path('opportunities/new/', opportunity_create, name='opportunity_create'),
+    path('opportunities/<int:pk>/edit/', opportunity_edit, name='opportunity_edit'),
+    path('opportunities/<int:pk>/delete/', opportunity_delete, name='opportunity_delete'),
 ]
