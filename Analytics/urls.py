@@ -33,6 +33,7 @@ urlpatterns = [
     path('api_super_admin/', include('api_super_admin.urls', namespace='api_super_admin')),
     path('api_teacher/', include('api_teacher.urls', namespace='api_teacher')),
     # path('parent/', include('parent.urls')),
+    # GLOBAL URLS FOR WEB ADMIN
     path('accountant/', include('web_accountant.urls', namespace='web_accountant')),
     path('web_admin/', include('web_admin.urls', namespace='web_admin')),
     path('app/', include('web_app.urls', namespace='web_app')),
