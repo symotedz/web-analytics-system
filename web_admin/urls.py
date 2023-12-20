@@ -158,28 +158,28 @@ urlpatterns = [
     path('class_blocks_delete/', class_block_views.class_blocks_delete, name='class_blocks_delete'),
     
     # urls for Elearning view
-    path(' ELearning_create/',  ELearning_views.ELearning_create, name='ELearning_create'),
-    path(' ELearnings_detail/',  ELearning_views.ELearnings_detail, name='ELearnings_detail'),
-    path(' ELearning_detail/<int:pk>/',  ELearning_views.ELearning_detail, name='ELearning_detail'),
-    path(' ELearning_update/<int:pk>/',  ELearning_views.ELearning_update, name='ELearning_update'),
-    path(' ELearning_delete/<int:pk>/',  ELearning_views.ELearning_delete, name='ELearning_delete'),
-    path(' ELearnings_delete/',  ELearning_views.ELearnings_delete, name='ELearnings_delete'),
+    path('ELearning_create/',  ELearning_views.ELearning_create, name='ELearning_create'),
+    path('ELearnings_detail/',  ELearning_views.ELearnings_detail, name='ELearnings_detail'),
+    path('ELearning_detail/<int:pk>/',  ELearning_views.ELearning_detail, name='ELearning_detail'),
+    path('ELearning_update/<int:pk>/',  ELearning_views.ELearning_update, name='ELearning_update'),
+    path('ELearning_delete/<int:pk>/',  ELearning_views.ELearning_delete, name='ELearning_delete'),
+    path('ELearnings_delete/',  ELearning_views.ELearnings_delete, name='ELearnings_delete'),
     
     # urls for Message view
-    path(' Message_create/',  Message_views.Message_create, name='Message_create'),
-    path(' Messages_detail/',  Message_views.Messages_detail, name='Messages_detail'),
-    path(' Message_detail/<int:pk>/',  Message_views.Message_detail, name='Message_detail'),
-    path(' Message_update/<int:pk>/',  Message_views.Message_update, name='Message_update'),
-    path(' Message_delete/<int:pk>/',  Message_views.Message_delete, name='Message_delete'),
-    path(' Messages_delete/',  Message_views.Messages_delete, name='Messages_delete'),
+    path('Message_create/',  Message_views.Message_create, name='Message_create'),
+    path('Messages_detail/',  Message_views.Messages_detail, name='Messages_detail'),
+    path('Message_detail/<int:pk>/',  Message_views.Message_detail, name='Message_detail'),
+    path('Message_update/<int:pk>/',  Message_views.Message_update, name='Message_update'),
+    path('Message_delete/<int:pk>/',  Message_views.Message_delete, name='Message_delete'),
+    path('Messages_delete/',  Message_views.Messages_delete, name='Messages_delete'),
     
     # urls for TimeTable view
-    path(' TimeTable_create/',  TimeTable_views.TimeTable_create, name='TimeTable_create'),
-    path(' TimeTables_detail/',  TimeTable_views.TimeTables_detail, name='TimeTables_detail'),
-    path(' TimeTable_detail/<int:pk>/',  TimeTable_views.TimeTable_detail, name='TimeTable_detail'),
-    path(' TimeTable_update/<int:pk>/',  TimeTable_views.TimeTable_update, name='TimeTable_update'),
-    path(' TimeTable_delete/<int:pk>/',  TimeTable_views.TimeTable_delete, name='TimeTable_delete'),
-    path(' TimeTables_delete/',  TimeTable_views.TimeTables_delete, name='TimeTables_delete'),
+    path('TimeTable_create/',  TimeTable_views.TimeTable_create, name='TimeTable_create'),
+    path('TimeTables_detail/',  TimeTable_views.TimeTables_detail, name='TimeTables_detail'),
+    path('TimeTable_detail/<int:pk>/',  TimeTable_views.TimeTable_detail, name='TimeTable_detail'),
+    path('TimeTable_update/<int:pk>/',  TimeTable_views.TimeTable_update, name='TimeTable_update'),
+    path('TimeTable_delete/<int:pk>/',  TimeTable_views.TimeTable_delete, name='TimeTable_delete'),
+    path('TimeTables_delete/',  TimeTable_views.TimeTables_delete, name='TimeTables_delete'),
     
     # urls for ExamResult view
     path('ExamResult_create/', ExamResult_views.ExamResult_create, name='ExamResult_create'),
