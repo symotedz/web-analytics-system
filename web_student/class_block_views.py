@@ -1,22 +1,9 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from django.http import HttpResponse
-from . models import *
-from . forms import *
+from web_super_admin.models import class_block
+from web_super_admin.forms import Class_blockForm
 
-# view for creating new class_block
-def class_block_create(request):
-    form = Class_blockForm(request.POST)
-    if request.method == 'POST':
-        form = Class_blockForm(request.POST)
-        if form.is_valid():
-            form.save()
-            return redirect('/super_admin/class_blocks_detail/')
-    else:
-        form = Class_blockForm(request.POST)
-    context = {
-        'form' : form
-    }
-    return render(request, 'Dashboard/class_block_create.html', context)
+
 
 # view for reading all class_blocks
 def class_blocks_detail(request):
@@ -35,34 +22,7 @@ def class_block_detail(request, pk):
     }
     return render(request, 'Dashboard/class_block_detail.html', context)
 
-# view for updating a single user
-def class_block_update(request, pk):
-    Class_block = get_object_or_404(class_block, pk=pk)
-    form = Class_blockForm(request.POST, instance = Class_block)
-    if request.method == 'POST':
-        form = Class_blockForm(request.POST, instance = Class_block)
-        if form.is_valid():
-            form.save()
-            return redirect('/super_admin/class_blocks_detail/')
-    else:
-        form = Class_blockForm(request.POST, instance = Class_block)
-    context = {
-        'form' : form,
-        'Class_block' : Class_block
-    }
-    return render(request, 'Dashboard/class_block_update.html', context)
 
-#view for deleting a single user
-def class_block_delete(request, pk):
-    Class_block = get_object_or_404(class_block, pk=pk)
-    Class_block.delete()
-    return redirect('/super_admin/class_blocks_detail/')
-
-# view for deleting all users
-def class_blocks_delete(request):
-    Class_block =class_block.objects.all()
-    Class_block.delete()
-    return redirect('/super_admin/staffs_detail/')
 
         
     
