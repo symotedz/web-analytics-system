@@ -3,20 +3,7 @@ from django.http import HttpResponse
 from web_super_admin.models import Exam
 from web_super_admin.forms import ExamForm
 
-# view for creating new exam
-def exam_create(request):
-    form = ExamForm(request.POST)
-    if request.method == 'POST':
-        form = ExamForm(request.POST)
-        if form.is_valid():
-            form.save()
-            return redirect('/super_admin/exams_detail/')
-    else:
-        form = ExamForm(request.POST)
-    context = {
-        'form' : form
-    }
-    return render(request, 'Dashboard/exam_create.html', context)
+
 
 # view for reading all exams
 def exams_detail(request):
@@ -35,34 +22,7 @@ def exam_detail(request, pk):
     }
     return render(request, 'Dashboard/exam_detail.html', context)
 
-# view for updating a single user
-def exam_update(request, pk):
-    exam = get_object_or_404(Exam, pk=pk)
-    form = ExamForm(request.POST, instance = exam)
-    if request.method == 'POST':
-        form = ExamForm(request.POST, instance = exam)
-        if form.is_valid():
-            form.save()
-            return redirect('/super_admin/exams_detail/')
-    else:
-        form = ExamForm(request.POST, instance = exam)
-    context = {
-        'form' : form,
-        'exam' : exam
-    }
-    return render(request, 'Dashboard/exam_update.html', context)
 
-#view for deleting a single user
-def exam_delete(request, pk):
-    exam = get_object_or_404(Exam, pk=pk)
-    exam.delete()
-    return redirect('/super_admin/exams_detail/')
-
-# view for deleting all users
-def exams_delete(request):
-    exam =Exam.objects.all()
-    exam.delete()
-    return redirect('/super_admin/exam_detail/')
 
         
     

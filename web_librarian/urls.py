@@ -1,5 +1,5 @@
 from django.urls import path      
-from . import views, books_render_views, books_views, notices_views
+from . import views, books_render_views, books_views, notices_views, Message_views
 from . OpportunityView import opportunity_detail, opportunity_list
 
 app_name = 'web_librarian'
@@ -22,6 +22,14 @@ urlpatterns = [
     path('Book_Detail/<int:pk>/', books_views.Book_Detail, name='Book_Detail'),
     path('Book_Update/<int:pk>/', books_views.Book_Update, name='Book_Update'),
     path('Book_delete/<int:pk>/', books_views.Book_delete, name='Book_delete'),
+
+    # urls for Message view
+    path('Message_create/',  Message_views.Message_create, name='Message_create'),
+    path('Messages_detail/',  Message_views.Messages_detail, name='Messages_detail'),
+    path('Message_detail/<int:pk>/',  Message_views.Message_detail, name='Message_detail'),
+    path('Message_update/<int:pk>/',  Message_views.Message_update, name='Message_update'),
+    path('Message_delete/<int:pk>/',  Message_views.Message_delete, name='Message_delete'),
+    path('Messages_delete/',  Message_views.Messages_delete, name='Messages_delete'),
 
     # view urls
     path('notices/', notices_views.Notices, name="Notices"),

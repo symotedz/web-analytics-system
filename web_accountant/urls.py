@@ -1,5 +1,5 @@
 from django.urls import path
-from . import views, fee_views, student_view, staff_views, CashOut_view
+from . import views, fee_views, student_view, staff_views, CashOut_view, Message_views
 from . OpportunityView import opportunity_detail, opportunity_list
 
 app_name  = 'web_accountant'
@@ -14,6 +14,14 @@ urlpatterns = [
     path('fee_update/<int:pk>/', fee_views.fee_update, name='fee_update'),
     path('fee_delete/<int:pk>/', fee_views.fee_delete, name='fee_delete'),
     path('fees_delete/', fee_views.fees_delete, name='fees_delete'),
+
+     # urls for Message view
+    path('Message_create/',  Message_views.Message_create, name='Message_create'),
+    path('Messages_detail/',  Message_views.Messages_detail, name='Messages_detail'),
+    path('Message_detail/<int:pk>/',  Message_views.Message_detail, name='Message_detail'),
+    path('Message_update/<int:pk>/',  Message_views.Message_update, name='Message_update'),
+    path('Message_delete/<int:pk>/',  Message_views.Message_delete, name='Message_delete'),
+    path('Messages_delete/',  Message_views.Messages_delete, name='Messages_delete'),
 
     # Urls for cashout
     path('CashOutCreate/', CashOut_view.CashOutCreate, name= "CashOutCreate"),
