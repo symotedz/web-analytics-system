@@ -26,10 +26,12 @@ SECRET_KEY = 'django-insecure-xqobg8iw((6o$_ub+hfi)8sbhj))%$w+$)!9eec%kxd6oy8qe+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
+CSRF_TRUSTED_ORIGINS = ['https://lzmfxv-8000.csb.app/']
+
 
 REST_FRAMEWORK = {
-    'DEFAULT_PERMISSION_CLASSES':[
+    'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
     ]
 }
