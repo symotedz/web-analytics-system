@@ -24,11 +24,17 @@ class Teacher(models.Model):
         return self.first_name
 
 class Staff(models.Model):
+    STAFF_CHOICES = (
+        ('Librarian', 'Librarian'),
+        ('Accountant', 'Accountant'),
+        ('Cooker', 'Cooker'),
+        ('Casual Work', 'Casual Work'),
+    )
     profile_picture = models.ImageField(upload_to="upload/", default="a.png", null=True, blank=True)
     first_name = models.CharField(max_length=200)
     middle_name = models.CharField(max_length=200)
     last_name = models.CharField(max_length=200)
-    role = models.CharField(max_length=200)
+    role = models.CharField(max_length=200, choices = STAFF_CHOICES, null=True, blank=True)
     status = models.BooleanField(default=True)
     start_date = models.DateTimeField(auto_now_add=True, blank=True, null=True)
     end_date = models.DateTimeField(blank=True, null=True)
@@ -157,6 +163,7 @@ class Assignment(models.Model):
     name = models.CharField(max_length=255)
     class_name = models.ForeignKey(class_block, on_delete=models.CASCADE, null=True, blank=True)
     subject = models.ForeignKey(Subject, on_delete = models.CASCADE)
+    file = models.FileField(null=True, blank=True)
     date_posted = models.DateTimeField(auto_now_add=True, null=True, blank=True)
     due_date = models.DateField()
     description = models.TextField()
