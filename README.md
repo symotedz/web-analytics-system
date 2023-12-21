@@ -35,6 +35,8 @@ Web part
 
  more infor https://github.com/symotedz/web-analytics-system/blob/analyticsweb/system.md
 
+ <a href="https://wakatime.com/badge/github/symotedz/web-analytics-system"><img src="https://wakatime.com/badge/github/symotedz/web-analytics-system.svg" alt="wakatime"></a>
+
 
 
 

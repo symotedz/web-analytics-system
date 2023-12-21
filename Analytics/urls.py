@@ -42,6 +42,10 @@ urlpatterns = [
     path('student/', include('web_student.urls', namespace='web_student')),
     path('super_admin/', include('web_super_admin.urls', namespace='web_super_admin')),
     path('teacher/', include('web_teacher.urls', namespace='web_teacher')),
+
+    # Urls for Other Core System Modules
+    path('socialmedia/', include('socialmedia.urls', namespace="socialmedia")),
+    path('dataAnalysis/', include('dataAnalysis.urls', namespace='dataAnalysis')),
 ]
 
 if settings.DEBUG:
