@@ -46,6 +46,8 @@ urlpatterns = [
     # Urls for Other Core System Modules
     path('socialmedia/', include('socialmedia.urls', namespace="socialmedia")),
     path('dataAnalysis/', include('dataAnalysis.urls', namespace='dataAnalysis')),
+    path('pdf/', include('pdf.urls', namespace='pdf')),
+    path('analyticscsv/', include('analyticscsv.urls', namespace='analyticscsv')),
 ]
 
 if settings.DEBUG:
