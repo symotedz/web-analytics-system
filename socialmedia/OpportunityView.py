@@ -1,6 +1,6 @@
 from django.shortcuts import render, get_object_or_404, redirect
-from .models import Opportunities
-from .forms import OpportunitiesForm
+from web_super_admin .models import Opportunities
+from web_super_admin.forms import OpportunitiesForm
 
 def opportunity_list(request):
     opportunities = Opportunities.objects.all()

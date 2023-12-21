@@ -18,6 +18,7 @@ class Teacher(models.Model):
     joining_date = models.DateTimeField(auto_now = True)
     status = models.BooleanField(default=True)
     profile_photo = models.ImageField(upload_to="upload/", default="a.png", null=True, blank=True)
+    Teacher_Number = models.PositiveBigIntegerField(unique=True, null=True, blank=True)
     
     def __str__(self):
         return self.first_name
@@ -31,6 +32,7 @@ class Staff(models.Model):
     status = models.BooleanField(default=True)
     start_date = models.DateTimeField(auto_now_add=True, blank=True, null=True)
     end_date = models.DateTimeField(blank=True, null=True)
+    Staff_Number = models.PositiveBigIntegerField(unique=True, null=True, blank=True)
     
 class School_blocks(models.Model):
     name = models.CharField(max_length=200)
