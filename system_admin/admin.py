@@ -1,5 +1,3 @@
-# admin.py
-
 from django.contrib import admin
 from .models import Super_Admin_User, School
 
