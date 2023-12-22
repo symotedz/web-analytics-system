@@ -8,6 +8,15 @@ class Plan(models.Model):
     name = models.CharField(max_length=255)
     payment_method = models.CharField(max_length=255)
     date = models.DateTimeField(auto_now_add=True)
+
+class Super_Admin_User(models.Model):
+    name = models.CharField(max_length=255)
+
+class School(models.Model):
+    name = models.CharField(max_length=255)
+    user = models.ForeignKey(Super_Admin_User, on_delete=models.CASCADE)
+
+
     
 class Teacher(models.Model):
     first_name = models.CharField(max_length=200)

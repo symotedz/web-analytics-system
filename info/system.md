@@ -65,6 +65,9 @@ Using data science libraries to read uploaded csv files and Analyze them:::speci
 3) - API parent - # issue on transportaion request
 4) - Staff and Staffs ** Serialization >>>conflict on best
 
+Super-Admin
+    - Username = simon
+    - Password = simon
 
 ## authentication system
 ### The interfaces:::
