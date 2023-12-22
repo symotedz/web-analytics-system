@@ -27,8 +27,8 @@ class SchoolAdmin(admin.ModelAdmin):
     end_date.short_description = 'End Date'
 
 class CustomAdminSite(admin.AdminSite):
-    site_header = 'Symotedz Analytics'
-    site_title = 'ymotedz Analytics'
+    site_header = 'Analytics System'
+    site_title = 'Analytics System'
 
 admin.site = CustomAdminSite(name='admin')
 admin.autodiscover()
