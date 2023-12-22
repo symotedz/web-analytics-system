@@ -44,6 +44,7 @@ urlpatterns = [
     path('teacher/', include('web_teacher.urls', namespace='web_teacher')),
 
     # Urls for Other Core System Modules
+    path('system_admin/', include('system_admin.urls', namespace='system_admin')),
     path('socialmedia/', include('socialmedia.urls', namespace="socialmedia")),
     path('dataAnalysis/', include('dataAnalysis.urls', namespace='dataAnalysis')),
     path('pdf/', include('pdf.urls', namespace='pdf')),

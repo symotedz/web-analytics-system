@@ -70,6 +70,7 @@ INSTALLED_APPS = [
     'dataAnalysis',
     'socialmedia',
     'csv',
+    'system_admin',
 ]
 
 MIDDLEWARE = [
