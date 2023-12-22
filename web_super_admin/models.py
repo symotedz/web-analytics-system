@@ -13,6 +13,7 @@ class Super_Admin_User(models.Model):
     name = models.CharField(max_length=255)
     Registration_date = models.DateTimeField(auto_now_add=True, null=True, blank=True)
     status = models.BooleanField(default=True, blank=True, null=True)
+    End_Date = models.DateField(blank=True, null=True)
 
 class School(models.Model):
     name = models.CharField(max_length=255)
@@ -20,6 +21,7 @@ class School(models.Model):
     Registration_date = models.DateTimeField(auto_now_add=True, null=True, blank=True)
     status = models.BooleanField(default=True, null=True, blank=True)
     End_Date = models.DateField(blank=True, null=True)
+    
 
 
     
