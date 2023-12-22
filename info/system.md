@@ -81,7 +81,7 @@ Super-Admin
 
 - Generating admin form in the super-admin and admin interface that will input the password
 - And Then other interfaces will login to the portal using username and password provided.
-- Admin will be provided login credentials from super-admin portal
+- Admin Interface will be provided login credentials from super-admin portal Interface.
 - There is one user login form only,,so depending on the input credential system should know the user, and redirect him/her to her interface
 - portal.
 - Login, Logout, Cookies, LocalStorage(indexedDB)
