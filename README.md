@@ -6,7 +6,7 @@ Web part
 ## Symotedz Analytics System
 
 # instructions
-1) Fork the Repository
+1) Fork the Repository.
 
 2) Create A new Branch <git checkout -b feature>
 
