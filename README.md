@@ -10,7 +10,7 @@ Web part
 
 2) Create A new Branch <git checkout -b feature>
 
-3) Make Your Changes
+3) Make Your Changes.
 
 4) Push your new changes to the branch in github
 
