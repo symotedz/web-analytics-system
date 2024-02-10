@@ -9,6 +9,7 @@ class Super_Admin_User(models.Model):
     country = models.CharField(max_length=255, blank=True, null=True)
     contact = models.CharField(max_length=255, blank=True, null=True)
     email = models.EmailField(blank=True, null=True)
+    profile_photo = models.ImageField(upload_to="upload/", default="a.png", null=True, blank=True)
 
 class School(models.Model):
     name = models.CharField(max_length=255)
