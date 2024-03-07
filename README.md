@@ -1,4 +1,9 @@
 # ANALYTICS SYSTEM
+
+## - NB:: Project Discontinued, 7th of March 2024, 14:47 pm, This projects continues in a private repo 
+## with User Interface Redeveloped, Code Restructing and Many More Internal Backend Module, Anyway Happy
+## Codding!!!, You can Use this for learning purposes
+
 ## ANDROID :: IOS :: WEB  :: DESKTOP 
 Backend Analytics System
 Web part
